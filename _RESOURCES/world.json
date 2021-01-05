@@ -21,15 +21,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -39,22 +39,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                0
-            ],
-            "south": [
-                1,
-                2
-            ],
-            "west": [
-                0,
-                1
-            ],
-            "east": [
-                2,
-                1
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 2)": {
@@ -69,15 +85,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -87,22 +103,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                1
-            ],
-            "south": [
-                1,
-                3
-            ],
-            "west": [
-                0,
-                2
-            ],
-            "east": [
-                2,
-                2
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 3)": {
@@ -116,13 +148,17 @@
             "east": "placeholder"
         },
         "items": {
-            "book": {
-                "description": "a book",
+            "item1": {
+                "desc": "placeholder",
                 "pickup": "no"
             },
-            "sign": {
-                "description": "a sign",
+            "item2": {
+                "desc": "placeholder",
                 "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
             }
         },
         "interactions": {
@@ -131,22 +167,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                2
-            ],
-            "south": [
-                1,
-                4
-            ],
-            "west": [
-                0,
-                3
-            ],
-            "east": [
-                2,
-                3
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 4)": {
@@ -161,15 +213,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -179,22 +231,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                3
-            ],
-            "south": [
-                1,
-                5
-            ],
-            "west": [
-                0,
-                4
-            ],
-            "east": [
-                2,
-                4
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 5)": {
@@ -209,15 +277,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -227,22 +295,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                4
-            ],
-            "south": [
-                1,
-                6
-            ],
-            "west": [
-                0,
-                5
-            ],
-            "east": [
-                2,
-                5
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 6)": {
@@ -257,15 +341,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -275,22 +359,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                5
-            ],
-            "south": [
-                1,
-                7
-            ],
-            "west": [
-                0,
-                6
-            ],
-            "east": [
-                2,
-                6
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 7)": {
@@ -305,15 +405,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -323,22 +423,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                6
-            ],
-            "south": [
-                1,
-                8
-            ],
-            "west": [
-                0,
-                7
-            ],
-            "east": [
-                2,
-                7
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(1, 8)": {
@@ -353,15 +469,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -371,22 +487,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                1,
-                7
-            ],
-            "south": [
-                1,
-                9
-            ],
-            "west": [
-                0,
-                8
-            ],
-            "east": [
-                2,
-                8
-            ]
+            "north": {
+                "coord": [
+                    1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 0)": null,
@@ -402,15 +534,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -420,22 +552,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                0
-            ],
-            "south": [
-                2,
-                2
-            ],
-            "west": [
-                1,
-                1
-            ],
-            "east": [
-                3,
-                1
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 2)": {
@@ -450,15 +598,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -468,22 +616,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                1
-            ],
-            "south": [
-                2,
-                3
-            ],
-            "west": [
-                1,
-                2
-            ],
-            "east": [
-                3,
-                2
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 3)": {
@@ -498,15 +662,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -516,22 +680,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                2
-            ],
-            "south": [
-                2,
-                4
-            ],
-            "west": [
-                1,
-                3
-            ],
-            "east": [
-                3,
-                3
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 4)": {
@@ -546,15 +726,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -564,22 +744,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                3
-            ],
-            "south": [
-                2,
-                5
-            ],
-            "west": [
-                1,
-                4
-            ],
-            "east": [
-                3,
-                4
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 5)": {
@@ -594,15 +790,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -612,22 +808,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                4
-            ],
-            "south": [
-                2,
-                6
-            ],
-            "west": [
-                1,
-                5
-            ],
-            "east": [
-                3,
-                5
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 6)": {
@@ -642,15 +854,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -660,22 +872,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                5
-            ],
-            "south": [
-                2,
-                7
-            ],
-            "west": [
-                1,
-                6
-            ],
-            "east": [
-                3,
-                6
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 7)": {
@@ -690,15 +918,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -708,22 +936,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                6
-            ],
-            "south": [
-                2,
-                8
-            ],
-            "west": [
-                1,
-                7
-            ],
-            "east": [
-                3,
-                7
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(2, 8)": {
@@ -738,15 +982,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -756,22 +1000,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                2,
-                7
-            ],
-            "south": [
-                2,
-                9
-            ],
-            "west": [
-                1,
-                8
-            ],
-            "east": [
-                3,
-                8
-            ]
+            "north": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    2,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 0)": null,
@@ -787,15 +1047,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -805,22 +1065,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                0
-            ],
-            "south": [
-                3,
-                2
-            ],
-            "west": [
-                2,
-                1
-            ],
-            "east": [
-                4,
-                1
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 2)": {
@@ -835,15 +1111,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -853,22 +1129,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                1
-            ],
-            "south": [
-                3,
-                3
-            ],
-            "west": [
-                2,
-                2
-            ],
-            "east": [
-                4,
-                2
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 3)": {
@@ -883,15 +1175,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -901,22 +1193,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                2
-            ],
-            "south": [
-                3,
-                4
-            ],
-            "west": [
-                2,
-                3
-            ],
-            "east": [
-                4,
-                3
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 4)": {
@@ -931,15 +1239,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -949,22 +1257,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                3
-            ],
-            "south": [
-                3,
-                5
-            ],
-            "west": [
-                2,
-                4
-            ],
-            "east": [
-                4,
-                4
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 5)": {
@@ -979,15 +1303,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -997,22 +1321,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                4
-            ],
-            "south": [
-                3,
-                6
-            ],
-            "west": [
-                2,
-                5
-            ],
-            "east": [
-                4,
-                5
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 6)": {
@@ -1027,15 +1367,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1045,22 +1385,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                5
-            ],
-            "south": [
-                3,
-                7
-            ],
-            "west": [
-                2,
-                6
-            ],
-            "east": [
-                4,
-                6
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 7)": {
@@ -1075,15 +1431,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1093,22 +1449,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                6
-            ],
-            "south": [
-                3,
-                8
-            ],
-            "west": [
-                2,
-                7
-            ],
-            "east": [
-                4,
-                7
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(3, 8)": {
@@ -1123,15 +1495,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1141,109 +1513,97 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                3,
-                7
-            ],
-            "south": [
-                3,
-                9
-            ],
-            "west": [
-                2,
-                8
-            ],
-            "east": [
-                4,
-                8
-            ]
+            "north": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    3,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 0)": {
-		"description": {
-            "place": "You're in a very dark cave."
-		},
-		"directions": {
-            "north": "It's a cave wall",
-            "south": "You see a bright light",
-            "west": "It's a cave wall",
-            "east": "It's a cave wall"
-        },
-		"items": {
-			"nothing": {
-			"description": "There's just nothing here",
-			"pickup": "no"
-			}
-		},
-		"interactions": {
-            "nothing": "It stares back at you"
-        },
-		"neighbours": {
-            "south": [
-                4,
-                1
-            ],
-            "west": [
-                3,
-                0
-            ],
-            "east": [
-                5,
-                0
-            ]
-        }
-	},
-    "(4, 1)": {
         "description": {
-            "place": "it's this place right here"
+            "place": "You see a dark cave"
         },
         "directions": {
-            "north": "It's the cave you came out of",
-            "south": "You see mountains, Gandalf",
-            "west": "placeholder",
-            "east": "placeholder"
+            "north": "It's a wall",
+            "south": "You see a light outside a cave entrance",
+            "west": "It's a wall",
+            "east": "It's a wall"
         },
         "items": {
-            "book": {
-                "description": "a book",
-                "pickup": "yes"
-            },
-            "sign": {
-                "description": "a sign",
+            "nothing": {
+                "desc": "nothing",
                 "pickup": "no"
-            },
-            "key": {
-                "description": "a key",
-                "pickup": "yes"
             }
         },
         "interactions": {
-            "book": "it's an ordinary book",
-            "sign": "the sign says x, y, z",
-            "key": "it's a rusty key that looks usable"
+            "nothing": "It stares back at you"
         },
         "neighbours": {
-            "north": [
-                4,
-                0
-            ],
-            "south": [
-                4,
-                2
-            ],
-            "west": [
-                3,
-                1
-            ],
-            "east": [
-                5,
-                1
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "yes",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
-    "(4, 2)": {
+    "(4, 1)": {
         "description": {
-            "place": "this other place"
+            "place": "placeholder"
         },
         "directions": {
             "north": "placeholder",
@@ -1253,15 +1613,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1271,22 +1631,102 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                1
-            ],
-            "south": [
-                4,
-                3
-            ],
-            "west": [
-                3,
-                2
-            ],
-            "east": [
-                5,
-                2
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        }
+    },
+    "(4, 2)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 3)": {
@@ -1301,15 +1741,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1319,22 +1759,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                2
-            ],
-            "south": [
-                4,
-                4
-            ],
-            "west": [
-                3,
-                3
-            ],
-            "east": [
-                5,
-                3
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 4)": {
@@ -1349,15 +1805,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1367,22 +1823,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                3
-            ],
-            "south": [
-                4,
-                5
-            ],
-            "west": [
-                3,
-                4
-            ],
-            "east": [
-                5,
-                4
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 5)": {
@@ -1397,15 +1869,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1415,22 +1887,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                4
-            ],
-            "south": [
-                4,
-                6
-            ],
-            "west": [
-                3,
-                5
-            ],
-            "east": [
-                5,
-                5
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 6)": {
@@ -1445,15 +1933,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1463,22 +1951,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                5
-            ],
-            "south": [
-                4,
-                7
-            ],
-            "west": [
-                3,
-                6
-            ],
-            "east": [
-                5,
-                6
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 7)": {
@@ -1493,15 +1997,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1511,22 +2015,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                6
-            ],
-            "south": [
-                4,
-                8
-            ],
-            "west": [
-                3,
-                7
-            ],
-            "east": [
-                5,
-                7
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(4, 8)": {
@@ -1541,15 +2061,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1559,22 +2079,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                4,
-                7
-            ],
-            "south": [
-                4,
-                9
-            ],
-            "west": [
-                3,
-                8
-            ],
-            "east": [
-                5,
-                8
-            ]
+            "north": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    4,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 0)": null,
@@ -1590,15 +2126,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1608,22 +2144,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                0
-            ],
-            "south": [
-                5,
-                2
-            ],
-            "west": [
-                4,
-                1
-            ],
-            "east": [
-                6,
-                1
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 2)": {
@@ -1638,15 +2190,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1656,22 +2208,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                1
-            ],
-            "south": [
-                5,
-                3
-            ],
-            "west": [
-                4,
-                2
-            ],
-            "east": [
-                6,
-                2
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 3)": {
@@ -1686,15 +2254,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1704,22 +2272,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                2
-            ],
-            "south": [
-                5,
-                4
-            ],
-            "west": [
-                4,
-                3
-            ],
-            "east": [
-                6,
-                3
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 4)": {
@@ -1734,15 +2318,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1752,22 +2336,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                3
-            ],
-            "south": [
-                5,
-                5
-            ],
-            "west": [
-                4,
-                4
-            ],
-            "east": [
-                6,
-                4
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 5)": {
@@ -1782,15 +2382,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1800,22 +2400,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                4
-            ],
-            "south": [
-                5,
-                6
-            ],
-            "west": [
-                4,
-                5
-            ],
-            "east": [
-                6,
-                5
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 6)": {
@@ -1830,15 +2446,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1848,22 +2464,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                5
-            ],
-            "south": [
-                5,
-                7
-            ],
-            "west": [
-                4,
-                6
-            ],
-            "east": [
-                6,
-                6
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 7)": {
@@ -1878,15 +2510,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1896,22 +2528,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                6
-            ],
-            "south": [
-                5,
-                8
-            ],
-            "west": [
-                4,
-                7
-            ],
-            "east": [
-                6,
-                7
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(5, 8)": {
@@ -1926,15 +2574,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1944,22 +2592,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                5,
-                7
-            ],
-            "south": [
-                5,
-                9
-            ],
-            "west": [
-                4,
-                8
-            ],
-            "east": [
-                6,
-                8
-            ]
+            "north": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    5,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 0)": null,
@@ -1975,15 +2639,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -1993,22 +2657,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                0
-            ],
-            "south": [
-                6,
-                2
-            ],
-            "west": [
-                5,
-                1
-            ],
-            "east": [
-                7,
-                1
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 2)": {
@@ -2023,15 +2703,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2041,22 +2721,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                1
-            ],
-            "south": [
-                6,
-                3
-            ],
-            "west": [
-                5,
-                2
-            ],
-            "east": [
-                7,
-                2
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 3)": {
@@ -2071,15 +2767,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2089,22 +2785,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                2
-            ],
-            "south": [
-                6,
-                4
-            ],
-            "west": [
-                5,
-                3
-            ],
-            "east": [
-                7,
-                3
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 4)": {
@@ -2119,15 +2831,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2137,22 +2849,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                3
-            ],
-            "south": [
-                6,
-                5
-            ],
-            "west": [
-                5,
-                4
-            ],
-            "east": [
-                7,
-                4
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 5)": {
@@ -2167,15 +2895,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2185,22 +2913,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                4
-            ],
-            "south": [
-                6,
-                6
-            ],
-            "west": [
-                5,
-                5
-            ],
-            "east": [
-                7,
-                5
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 6)": {
@@ -2215,15 +2959,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2233,22 +2977,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                5
-            ],
-            "south": [
-                6,
-                7
-            ],
-            "west": [
-                5,
-                6
-            ],
-            "east": [
-                7,
-                6
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 7)": {
@@ -2263,15 +3023,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2281,22 +3041,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                6
-            ],
-            "south": [
-                6,
-                8
-            ],
-            "west": [
-                5,
-                7
-            ],
-            "east": [
-                7,
-                7
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(6, 8)": {
@@ -2311,15 +3087,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2329,22 +3105,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                6,
-                7
-            ],
-            "south": [
-                6,
-                9
-            ],
-            "west": [
-                5,
-                8
-            ],
-            "east": [
-                7,
-                8
-            ]
+            "north": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    6,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 0)": null,
@@ -2360,15 +3152,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2378,22 +3170,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                0
-            ],
-            "south": [
-                7,
-                2
-            ],
-            "west": [
-                6,
-                1
-            ],
-            "east": [
-                8,
-                1
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 2)": {
@@ -2408,15 +3216,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2426,22 +3234,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                1
-            ],
-            "south": [
-                7,
-                3
-            ],
-            "west": [
-                6,
-                2
-            ],
-            "east": [
-                8,
-                2
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 3)": {
@@ -2456,15 +3280,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2474,22 +3298,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                2
-            ],
-            "south": [
-                7,
-                4
-            ],
-            "west": [
-                6,
-                3
-            ],
-            "east": [
-                8,
-                3
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 4)": {
@@ -2504,15 +3344,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2522,22 +3362,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                3
-            ],
-            "south": [
-                7,
-                5
-            ],
-            "west": [
-                6,
-                4
-            ],
-            "east": [
-                8,
-                4
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 5)": {
@@ -2552,15 +3408,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2570,22 +3426,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                4
-            ],
-            "south": [
-                7,
-                6
-            ],
-            "west": [
-                6,
-                5
-            ],
-            "east": [
-                8,
-                5
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 6)": {
@@ -2600,15 +3472,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2618,22 +3490,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                5
-            ],
-            "south": [
-                7,
-                7
-            ],
-            "west": [
-                6,
-                6
-            ],
-            "east": [
-                8,
-                6
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 7)": {
@@ -2648,15 +3536,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2666,22 +3554,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                6
-            ],
-            "south": [
-                7,
-                8
-            ],
-            "west": [
-                6,
-                7
-            ],
-            "east": [
-                8,
-                7
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(7, 8)": {
@@ -2696,15 +3600,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2714,22 +3618,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                7,
-                7
-            ],
-            "south": [
-                7,
-                9
-            ],
-            "west": [
-                6,
-                8
-            ],
-            "east": [
-                8,
-                8
-            ]
+            "north": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 0)": null,
@@ -2745,15 +3665,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2763,22 +3683,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                0
-            ],
-            "south": [
-                8,
-                2
-            ],
-            "west": [
-                7,
-                1
-            ],
-            "east": [
-                9,
-                1
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 2)": {
@@ -2793,15 +3729,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2811,22 +3747,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                1
-            ],
-            "south": [
-                8,
-                3
-            ],
-            "west": [
-                7,
-                2
-            ],
-            "east": [
-                9,
-                2
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 3)": {
@@ -2841,15 +3793,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2859,22 +3811,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                2
-            ],
-            "south": [
-                8,
-                4
-            ],
-            "west": [
-                7,
-                3
-            ],
-            "east": [
-                9,
-                3
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 4)": {
@@ -2889,15 +3857,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2907,22 +3875,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                3
-            ],
-            "south": [
-                8,
-                5
-            ],
-            "west": [
-                7,
-                4
-            ],
-            "east": [
-                9,
-                4
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 5)": {
@@ -2937,15 +3921,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -2955,22 +3939,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                4
-            ],
-            "south": [
-                8,
-                6
-            ],
-            "west": [
-                7,
-                5
-            ],
-            "east": [
-                9,
-                5
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 6)": {
@@ -2985,15 +3985,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -3003,22 +4003,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                5
-            ],
-            "south": [
-                8,
-                7
-            ],
-            "west": [
-                7,
-                6
-            ],
-            "east": [
-                9,
-                6
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 7)": {
@@ -3033,15 +4049,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -3051,22 +4067,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                6
-            ],
-            "south": [
-                8,
-                8
-            ],
-            "west": [
-                7,
-                7
-            ],
-            "east": [
-                9,
-                7
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     },
     "(8, 8)": {
@@ -3081,15 +4113,15 @@
         },
         "items": {
             "item1": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             },
             "item2": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "yes"
             },
             "item3": {
-                "description": "placeholder",
+                "desc": "placeholder",
                 "pickup": "no"
             }
         },
@@ -3099,22 +4131,38 @@
             "interact3": "placeholder"
         },
         "neighbours": {
-            "north": [
-                8,
-                7
-            ],
-            "south": [
-                8,
-                9
-            ],
-            "west": [
-                7,
-                8
-            ],
-            "east": [
-                9,
-                8
-            ]
+            "north": {
+                "coord": [
+                    8,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    8,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
         }
     }
 }

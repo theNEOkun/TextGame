@@ -5,14 +5,33 @@ from pathlib import Path
 RESOURCES = Path(__file__) / "_RESOURCES/"
 
 
+def mapping():
+    x_axis = range(9)
+    y_axis = range(9)
+    mapp = dict()
+
+    grid = itertools.product(x_axis, y_axis)
+
+    for each in grid:
+        x_, y_ = each
+        if x_ == 0 or y_ == 0 or x_ + 1 == 9 or y_ + 1 == 9:  # If it is in any edge point
+            mapp[each] = None  # Set to none and skip onwards
+            continue
+        else:
+            mapp[each] = {"part": "-"}
+
+    mapp[(4, 0)] = {"part": "-"}
+
+    with open("_RESOURCES/mapp.json", "w") as outfile:
+        json.dump({str(k): v for k, v in mapp.items()}, outfile, indent=4)
+
+
 def creator():
     x_axis = range(9)
     y_axis = range(9)
     world = dict()
 
     grid = itertools.product(x_axis, y_axis)
-
-    print(grid)
 
     for each in grid:
         x_, y_ = each
@@ -51,9 +70,9 @@ def creator():
 def calc_neigh(_cell_coord):
     x_, y_ = _cell_coord
     neighbour = {}
-    neighbour.update({"north": (x_, y_-1)})
-    neighbour.update({"south": (x_, y_+1)})
-    neighbour.update({"west": (x_-1, y_)})
-    neighbour.update({"east": (x_+1, y_)})
+    neighbour.update({"north": {"coord": (x_, y_-1), "walk": "no", "why": "placeholder"}})
+    neighbour.update({"south": {"coord": (x_, y_+1), "walk": "no", "why": "placeholder"}})
+    neighbour.update({"west": {"coord": (x_-1, y_), "walk": "no", "why": "placeholder"}})
+    neighbour.update({"east": {"coord": (x_+1, y_), "walk": "no", "why": "placeholder"}})
 
     return neighbour
