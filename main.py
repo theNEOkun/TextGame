@@ -97,15 +97,15 @@ def look(square, in_put):
 
 def walker(world, posit, in_put):
     inputs = in_put.split(" ")
-    direction = tuple(world[posit]["neighbours"][inputs[1]]["coord"])
-    if world[direction]:
+    try:
+        direction = tuple(world[posit]["neighbours"][inputs[1]]["coord"])
         if world[posit]["neighbours"][inputs[1]]["walk"] == "yes":
             return direction, place_description(world, direction)
         else:
             return posit, ("Can't walk there because {}\n"
                            .format(world[posit]["neighbours"][inputs[1]]["why"]))
-    else:
-        return posit, "There's no reason to go there\n"
+    except KeyError:
+        return posit, "Where did you want to walk?"
 
 
 def pickup(square, in_put):
@@ -148,10 +148,14 @@ def main_part():
 
 
 if __name__ == '__main__':
-    sys.stdout.write("Start, or reload world")
+    sys.stdout.write("Start, or reload world\n")
     interput = input("What do you want to do?")
     if interput == "start":
         main_part()
     if interput == "reload world":
-        wc.creator()
+        interput = input("Are you really sure?")
+        if interput == "yes":
+            wc.creator()
+        else:
+            pass
     # wc.mapping()
