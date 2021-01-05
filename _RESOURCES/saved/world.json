@@ -1,185 +1,13 @@
 {
     "(0, 0)": {
         "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    -1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 1)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 2)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 3)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 4)": {
-        "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see nothing there",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -203,242 +31,92 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    -1,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     0,
-                    3
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    5
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            }
-        },
-        "mapping": " "
-    },
-    "(0, 5)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    5
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    5
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 6)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    5
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 7)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(0, 8)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    1,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    0,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "east": {
-                "coord": [
-                    0,
-                    9
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            }
-        },
-        "mapping": "M"
-    },
-    "(1, 0)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    0,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
-                    1,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 1)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             },
             "east": {
                 "coord": [
@@ -446,20 +124,530 @@
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
+    },
+    "(0, 2)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 3)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 4)": {
+        "description": {
+            "place": "You see a dark cave"
+        },
+        "directions": {
+            "north": "It's a wall",
+            "south": "You see a light outside a cave entrance",
+            "west": "It's a wall",
+            "east": "It's a wall"
+        },
+        "items": {
+            "nothing": {
+                "desc": "nothing",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "nothing": "It stares back at you"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    5
+                ],
+                "walk": "yes",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "-"
+    },
+    "(0, 5)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 6)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 7)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(0, 8)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    0,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    0,
+                    9
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    -1,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    1,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
+    },
+    "(1, 0)": {
+        "description": {
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
+        },
+        "interactions": {
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
+        },
+        "neighbours": {
+            "north": {
+                "coord": [
+                    1,
+                    -1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    1,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            }
+        },
+        "mapping": "#"
     },
     "(1, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -483,48 +671,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    1
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -548,48 +736,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    2
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -613,48 +801,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    3
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -678,48 +866,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -743,48 +931,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    5
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -808,48 +996,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    6
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -873,134 +1061,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    7
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     1,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(1, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    0,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    2,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     1,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     1,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    0,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    2,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(2, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    1,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     2,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(2, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1024,48 +1256,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1089,48 +1321,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1154,48 +1386,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1219,48 +1451,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1284,48 +1516,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1349,48 +1581,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1414,134 +1646,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     2,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(2, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    1,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    3,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     2,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     2,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    1,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    3,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(3, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    2,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     3,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(3, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1565,48 +1841,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1630,48 +1906,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1695,48 +1971,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1760,48 +2036,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1825,48 +2101,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1890,48 +2166,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -1955,134 +2231,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     3,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(3, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    2,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    4,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     3,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     3,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    2,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    4,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(4, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    3,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     4,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(4, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2106,48 +2426,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2171,48 +2491,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2236,48 +2556,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2301,48 +2621,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2366,48 +2686,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2431,48 +2751,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2496,134 +2816,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     4,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(4, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    3,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    5,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     4,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     4,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    3,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    5,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(5, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    4,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     5,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(5, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2647,48 +3011,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2712,48 +3076,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2777,48 +3141,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2842,48 +3206,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2907,48 +3271,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -2972,48 +3336,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3037,134 +3401,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     5,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(5, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    4,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    6,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     5,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     5,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    4,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    6,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(6, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    5,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     6,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(6, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3188,48 +3596,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     0
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3253,48 +3661,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3318,48 +3726,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3383,48 +3791,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3448,48 +3856,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3513,48 +3921,48 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     7
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see open ground",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3578,134 +3986,178 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "west": {
-                "coord": [
                     6,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(6, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    5,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    7,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     6,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     6,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    5,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    7,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(7, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    6,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    8,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     7,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     7,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(7, 1)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see a wall",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3729,48 +4181,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     1
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     1
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    0
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 2)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3794,48 +4246,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     2
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     2
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    1
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 3)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3859,48 +4311,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     3
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     3
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    2
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 4)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3924,48 +4376,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     4
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     4
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 5)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -3989,48 +4441,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     5
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     5
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    6
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 6)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see open ground"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -4054,48 +4506,48 @@
         "neighbours": {
             "north": {
                 "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "south": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
                     6,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "south": {
+            "east": {
                 "coord": [
                     8,
                     6
                 ],
                 "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
-                    7,
-                    5
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "east": {
-                "coord": [
-                    7,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 7)": {
         "description": {
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see open ground",
-            "south": "You see a wall",
-            "west": "You see open ground",
-            "east": "You see a wall"
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
         },
         "items": {
             "item1": {
@@ -4119,467 +4571,687 @@
         "neighbours": {
             "north": {
                 "coord": [
-                    6,
-                    7
-                ],
-                "walk": "yes",
-                "why": "It's open ground"
-            },
-            "south": {
-                "coord": [
-                    8,
-                    7
-                ],
-                "walk": "no",
-                "why": "it's a wall"
-            },
-            "west": {
-                "coord": [
                     7,
                     6
                 ],
-                "walk": "yes",
-                "why": "It's open ground"
+                "walk": "no",
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     7,
                     8
                 ],
                 "walk": "no",
-                "why": "it's a wall"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": " "
+        "mapping": "-"
     },
     "(7, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
                 "coord": [
-                    6,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    8,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
-                "coord": [
                     7,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     7,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    6,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    8,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    0
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     -1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    0
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 1)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    1
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     0
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     2
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    1
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 2)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    2
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     1
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     3
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    2
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 3)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     2
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     4
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    3
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 4)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     3
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     5
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    4
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 5)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    5
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    5
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     4
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     6
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    5
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 6)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    6
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     5
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    6
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 7)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    7
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     6
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     8
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    7
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     },
     "(8, 8)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
+        },
+        "directions": {
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": "placeholder",
+            "interact2": "placeholder",
+            "interact3": "placeholder"
         },
         "neighbours": {
             "north": {
-                "coord": [
-                    7,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "south": {
-                "coord": [
-                    9,
-                    8
-                ],
-                "walk": "no",
-                "why": "there's nothing there"
-            },
-            "west": {
                 "coord": [
                     8,
                     7
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
             },
-            "east": {
+            "south": {
                 "coord": [
                     8,
                     9
                 ],
                 "walk": "no",
-                "why": "there's nothing there"
+                "why": "placeholder"
+            },
+            "west": {
+                "coord": [
+                    7,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
+            },
+            "east": {
+                "coord": [
+                    9,
+                    8
+                ],
+                "walk": "no",
+                "why": "placeholder"
             }
         },
-        "mapping": "M"
+        "mapping": "#"
     }
 }

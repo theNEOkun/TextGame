@@ -1,21 +1,29 @@
 import json
 import sys
+from asciimatics.screen import ManagedScreen
+from asciimatics.scene import Scene
+from asciimatics.effects import Cycle, Stars
+from asciimatics.renderers import FigletText
 import Base as b
 from ast import literal_eval
 import world_creator as wc
 
 INVENTORY = dict()
 
-RIM, GROUND, PLAYER = '#', '-', 'X'  # base cell states
-STATE_ELDER, STATE_PRIME_ELDER = 'E', 'P'           # cell states used for higher grade
+
+@ManagedScreen
+def screener(_status, world, posit, screen = None):
+    map_output = mapper(world, posit)
+    screen.print_at(map_output, 0, 0)
+    screen.print_at("\n\n{:^}\nWhat do you want to do?\n".format(_status, 50), 10, 0)
+    screen.refresh()
 
 
 def print_to_screen(_status, world, posit):
     b.clear_console()
-    mapper(world, posit)
-    sys.stdout.write("\n\n")
-    sys.stdout.write("{}".format(_status))
-    sys.stdout.write("\nWhat do you want to do?\n")
+    map_output = mapper(world, posit)
+    sys.stdout.write(map_output)
+    sys.stdout.write("\n\n{:^}\nWhat do you want to do?\n".format(_status, 50))
 
 
 def get_print_value(_val: str) -> str:
@@ -23,11 +31,9 @@ def get_print_value(_val: str) -> str:
     def get_state_color(state):
         """ Used to color console output. """
         switcher = {
-            RIM: '\033[45m',          # Magenta background color
-            GROUND: '\033[31m',         # Red foreground color
-            PLAYER: '\033[36m',        # Cyan foreground color
-            STATE_ELDER: '\033[32m',        # Green foreground color
-            STATE_PRIME_ELDER: '\033[34m',  # Blue foreground color
+            wc.RIM: '\033[100;100m ',          # Grey background color
+            wc.GROUND: '\033[;42m ',         # Green background color
+            wc.PLAYER: '\033[46;42m ',        # Green background, Cyan foreground color
             'ENDC': '\033[0m'               # Reset console color
         }
         return switcher.get(state, None)
@@ -38,19 +44,19 @@ def mapper(world, posit):
     _printer = []
     _i = 9
     for _cell in world:
-        if world[_cell]["mapping"] != "#":
-            if world[_cell] == posit:
-                _printer.append(get_print_value(PLAYER) + " ")
+        if world[_cell]["mapping"] != wc.RIM:
+            if world[_cell] != world[posit]:
+                _printer.append(get_print_value(world[_cell]["mapping"]))
             else:
-                _printer.append(get_print_value(world[_cell]["mapping"]) + " ")
+                _printer.append(get_print_value(wc.PLAYER))
         else:
-            _printer.append(get_print_value(RIM) + " ")
+            _printer.append(get_print_value(wc.RIM))
 
     while _i < len(_printer):
         _printer.insert(_i, "\n")  # Adds linebreaks where needed.
         _i += 9 + 1
 
-    sys.stdout.write(''.join(_printer))  # Prints it out
+    return "{:^}".format(''.join(_printer), 50)  # Prints the map out
 
 
 def open_file():
@@ -124,7 +130,7 @@ def inputter(world, posit):
     _status = str()
     while in_put != "exit":
         square = world[posit]
-        in_put = input()
+        # in_put = input()
         if "look" in in_put:
             _status = look(square, in_put)
         if "walk" in in_put or "go" in in_put:
@@ -133,7 +139,8 @@ def inputter(world, posit):
             pickup(square, in_put)
         if "open" in in_put:
             _status = INVENTORY
-        print_to_screen(_status, world, posit)
+        # print_to_screen(_status, world, posit)
+        screener(_status, world, posit)
     else:
         b.clear_console()
         sys.stdout.write("Goodbye")
@@ -141,10 +148,11 @@ def inputter(world, posit):
 
 def main_part():
     world = open_file()
-    b.set_console()
-    posit = (0, 4)
-    print_to_screen(place_description(world, posit), world, posit)
-    inputter(world, posit)
+    # b.set_console()
+    spawn = (0, 4)
+    # print_to_screen(place_description(world, spawn), world, spawn)
+    screener(place_description(world, spawn), world, spawn)
+    inputter(world, spawn)
 
 
 if __name__ == '__main__':
