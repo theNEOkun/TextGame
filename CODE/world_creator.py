@@ -153,10 +153,11 @@ def doors(world, next_map, placement, next_world):
                 if key == "coord":
                     try:
                         if next_map == value:
+                            central(world, each)
                             world[each]["neighbours"][card].update({"walk": "yes",
                                                                     "door": "yes",
                                                                     "world": next_world,
-                                                                    "placement": str(placement)
+                                                                    "placement": placement
                                                                     })
                             world[each]["directions"][card] = "it's a dark tunnel"
                         else:
@@ -168,14 +169,14 @@ def doors(world, next_map, placement, next_world):
 def caretaker(grid, world, x_axis, y_axis, number=0):
     vr = WORLDS
     for key, value in vr.items():
-        print(key)
+        print("KEY: ", key)
         if key == "world_1":
             spawn = SPAWN
         else:
             spawn = None
-        print(spawn)
-        print(vr[key]["DOORS"])
-        print(vr[key]["NEXT_MAP"])
+        print("SPAWN: ", spawn)
+        print("DOORS: ", vr[key]["DOORS"])
+        print("NEXT_MAP: ", vr[key]["NEXT_MAP"])
         output = "{}.json".format(key)
         vr[key]["WORLD"] = creator_world(grid, world, x_axis, y_axis, vr[key]["DOORS"], spawn)
 

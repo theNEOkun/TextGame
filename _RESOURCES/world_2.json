@@ -2459,16 +2459,41 @@
     },
     "(4, 0)": {
         "description": {
-            "place": "How did you get here?"
+            "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see a wall",
+            "north": "placeholder",
+            "south": "placeholder",
             "west": "it's a dark tunnel",
-            "east": "You see open ground"
+            "east": "placeholder"
+        },
+        "items": {
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
+            },
+            "item2": {
+                "desc": "placeholder",
+                "pickup": "yes"
+            },
+            "item3": {
+                "desc": "placeholder",
+                "pickup": "no"
+            }
         },
         "interactions": {
-            "interact1": "placeholder"
+            "interact1": {
+                "desc": "placeholder",
+                "key": "no"
+            },
+            "interact2": {
+                "desc": "placeholder",
+                "key": "no"
+            },
+            "interact3": {
+                "desc": "placeholder",
+                "key": "no"
+            }
         },
         "neighbours": {
             "north": {
@@ -2476,8 +2501,8 @@
                     3,
                     0
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "placeholder",
                 "door": "no"
             },
             "south": {
@@ -2485,8 +2510,8 @@
                     5,
                     0
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "placeholder",
                 "door": "no"
             },
             "west": {
@@ -2495,7 +2520,7 @@
                     -1
                 ],
                 "walk": "yes",
-                "why": "there's nothing there",
+                "why": "placeholder",
                 "door": "yes",
                 "world": 0,
                 "placement": [
@@ -2509,11 +2534,11 @@
                     1
                 ],
                 "walk": "yes",
-                "why": "It's open ground",
+                "why": "placeholder",
                 "door": "no"
             }
         },
-        "mapping": "M"
+        "mapping": " "
     },
     "(4, 1)": {
         "description": {

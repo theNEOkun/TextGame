@@ -3061,15 +3061,15 @@
             "place": "placeholder"
         },
         "directions": {
-            "north": "You see a wall",
-            "south": "You see a wall",
-            "west": "You see open ground",
+            "north": "placeholder",
+            "south": "placeholder",
+            "west": "placeholder",
             "east": "it's a dark tunnel"
         },
         "items": {
-            "item1": {
-                "desc": "placeholder",
-                "pickup": "no"
+            "map": {
+                "desc": "map",
+                "pickup": "yes"
             },
             "item2": {
                 "desc": "placeholder",
@@ -3100,8 +3100,8 @@
                     3,
                     8
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "placeholder",
                 "door": "no"
             },
             "south": {
@@ -3109,8 +3109,8 @@
                     5,
                     8
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "placeholder",
                 "door": "no"
             },
             "west": {
@@ -3119,7 +3119,7 @@
                     7
                 ],
                 "walk": "yes",
-                "why": "It's open ground",
+                "why": "placeholder",
                 "door": "no"
             },
             "east": {
@@ -3128,7 +3128,7 @@
                     9
                 ],
                 "walk": "yes",
-                "why": "there's nothing there",
+                "why": "placeholder",
                 "door": "yes",
                 "world": 1,
                 "placement": [

@@ -18,18 +18,21 @@ def get_print_value(_val: str) -> str:
     def get_state_color(state):
         """ Used to color console output. """
         switcher = {
-            wc.RIM: ' \033[100;100m ',          # Grey background color
-            wc.GROUND: ' \033[;42m ',         # Green background color
-            wc.PLAYER: ' \033[46;42m ',        # Green background, Cyan foreground color
+            wc.RIM: '\033[100;100m ',          # Grey background color
+            wc.GROUND: '\033[;42m ',         # Green background color
+            wc.PLAYER: '\033[46;42m ',        # Green background, Cyan foreground color
             'ENDC': '\033[0m'               # Reset console color
         }
         return switcher.get(state, None)
     return "{}{}{}".format(get_state_color(_val), _val, get_state_color('ENDC'))
 
 
-def mapper(world, posit, inventory):
-    def update_world():
+def update_world(world):
+    world_int = world
+    return world_int
 
+
+def mapper(world, posit, inventory):
     _printer = []
     _i = 9
     if inventory.is_in_inventory("map"):
@@ -103,24 +106,27 @@ def look(square, in_put, inventory):
                 return "Where did you want to look?\n"
 
 
-def walker(world, posit, in_put):
+def walker(world, posit, in_put, world_int):
     inputs = in_put.split(" ")
-    world_int = 0
-    try:
-        direction = tuple(world[posit]["neighbours"][inputs[1]]["coord"])
-        if world[posit]["neighbours"][inputs[1]]["walk"] == "yes":
-            if world[posit]["neighbours"][inputs[1]]["door"] == "yes":
-                direction = (world[posit]["neighbours"][inputs[1]]["placement"][0],
-                             world[posit]["neighbours"][inputs[1]]["placement"][1])
-                world_int = world[posit]["neighbours"][inputs[1]]["world"]
-                return direction, place_description(world, direction), world_int
+    cardinals = ("north", "south", "east", "west")
+    if inputs[1] in cardinals:
+        try:
+            direction = tuple(world[posit]["neighbours"][inputs[1]]["coord"])
+            if world[posit]["neighbours"][inputs[1]]["walk"] == "yes":
+                if world[posit]["neighbours"][inputs[1]]["door"] == "yes":
+                    direction = (world[posit]["neighbours"][inputs[1]]["placement"][0],
+                                 world[posit]["neighbours"][inputs[1]]["placement"][1])
+                    world_int = world[posit]["neighbours"][inputs[1]]["world"]
+                    return direction, place_description(world, direction), world_int
+                else:
+                    return direction, place_description(world, direction), world_int
             else:
-                return direction, place_description(world, direction), world_int
-        else:
-            return posit, ("Can't walk there because {}\n"
-                           .format(world[posit]["neighbours"][inputs[1]]["why"])), world_int
-    except KeyError or IndexError:
-        return posit, "Where did you want to walk?"
+                return posit, ("Can't walk there because {}\n"
+                               .format(world[posit]["neighbours"][inputs[1]]["why"])), world_int
+        except KeyError or IndexError:
+            return posit, "Where did you want to walk?"
+    else:
+        return posit, "Where did you want to walk?", world_int
 
 
 def pickup(square, in_put, inventory):
@@ -134,19 +140,20 @@ def pickup(square, in_put, inventory):
 
 
 def inputter(worlds, posit):
+    """Inputter here is what takes commands, and sends them further along on its journey."""
     logger, save = b.create_logger()
     world_int = 0
-    world = worlds[world_int]
     inventory = items.Inventory()
     in_put = str()
     _status = str()
     while in_put != "exit":
+        world = worlds[world_int]
         square = world[posit]
         in_put = input()
         if "look" in in_put:
             _status = look(square, in_put, inventory)
         if "walk" in in_put or "go" in in_put:
-            posit, _status, world_int = walker(world, posit, in_put)
+            posit, _status, world_int = walker(world, posit, in_put, world_int)
         if "pickup" in in_put:
             pickup(square, in_put, inventory)
         if "open" in in_put:
@@ -159,31 +166,35 @@ def inputter(worlds, posit):
         print_to_screen(_status, inventory, world, posit)
     else:
         b.clear_console()
-        print_to_screen("Do you want to save?", inventory, world, posit)
-        in_put = input()
+        print_to_screen("Do you want to save?\n", inventory, world, posit)
+        in_put = input("yes/no: ")
         if in_put == "yes":
             save.debug("Posit: {}\nWorld: {}\nInventory: {}".format(posit, world_int, inventory))
-            sys.stdout.write("Goodbye")
+            sys.stdout.write("Goodbye\n")
+        elif in_put == "no":
+            sys.stdout.write("Goodbye\n")
         else:
-            sys.stdout.write("Goodbye")
+            inputter(worlds, posit)
 
 
 def main_part():
+    """This initialises the whole thing, and is mostly used as a starting-point"""
     b.clear_console()
     worlds = open_file()
     b.set_console()
     spawn = wc.SPAWN
-    sys.stdout.write("Enter description text here")
+    sys.stdout.write("Enter description text here\n")
     inputter(worlds, spawn)
 
 
 if __name__ == '__main__':
+    """This is the stuff that is first printed out"""
     sys.stdout.write("Start, or reload world\n")
-    interput = input("What do you want to do?")
+    interput = input("What do you want to do? ")
     if interput == "start":
         main_part()
-    if interput == "reload world":
-        interput = input("Are you really sure?")
+    if interput == "reload world ":
+        interput = input("Are you really sure? ")
         if interput == "yes":
             wc.runner()
         else:
