@@ -6,11 +6,8 @@ from ast import literal_eval
 import CODE.world_creator as wc
 
 
-def print_to_screen(_status, inventory, world=None, posit=None):
-    b.clear_console()
-    map_output = mapper(world, posit, inventory)
-    sys.stdout.write(map_output)
-    sys.stdout.write("\n\n{}\n\nWhat do you want to do?\n".format(_status))
+def print_to_screen(_status):
+    sys.stdout.write("\n{}\n".format(_status))
 
 
 def get_print_value(_val: str) -> str:
@@ -25,11 +22,6 @@ def get_print_value(_val: str) -> str:
         }
         return switcher.get(state, None)
     return "{}{}{}".format(get_state_color(_val), _val, get_state_color('ENDC'))
-
-
-def update_world(world):
-    world_int = world
-    return world_int
 
 
 def mapper(world, posit, inventory):
@@ -49,7 +41,7 @@ def mapper(world, posit, inventory):
             _printer.insert(_i, "\n")  # Adds linebreaks where needed.
             _i += 9 + 1
 
-        return "{}".format(''.join(_printer))  # Prints the map out
+        return sys.stdout.write("{}".format(''.join(_printer)))  # Prints the map out
     else:
         return ""
 
@@ -76,127 +68,143 @@ def place_description(world, posit):
 
 
 def look(square, in_put, inventory):
-    if square["interactions"]:
-        possible_interactions = square["interactions"]
-        inputs = in_put.split(" ")
-        cardinals = ("north", "south", "east", "west")
-
-        if "at" in in_put:
-            try:
-                if inventory.is_in_inventory(inputs[2]):
-                    return "What do you mean?\n"
-                else:
-                    return possible_interactions[inputs[2]]["desc"] + "\n"
-            except KeyError:
-                return "You can't do that\n"
-        if "around" in in_put:
-            output = str()
-            output += square["description"]["place"] + "\n"
-            output += "You see:\n"
-            for keys, values in square["items"].items():
-                if inventory.is_in_inventory(keys):
-                    pass
-                else:
-                    output += "{}\n".format(values["desc"])
-            return "{:^}\n".format(output)
-        if inputs[1] in cardinals:
-            try:
-                return square["directions"][inputs[1]] + "\n"
-            except KeyError:
-                return "Where did you want to look?\n"
-
-
-def walker(world, posit, in_put, world_int):
-    inputs = in_put.split(" ")
+    possible_interactions = square["interactions"]
     cardinals = ("north", "south", "east", "west")
-    if inputs[1] in cardinals:
+
+    if "at" == in_put[1]:
         try:
-            direction = tuple(world[posit]["neighbours"][inputs[1]]["coord"])
-            if world[posit]["neighbours"][inputs[1]]["walk"] == "yes":
-                if world[posit]["neighbours"][inputs[1]]["door"] == "yes":
-                    direction = (world[posit]["neighbours"][inputs[1]]["placement"][0],
-                                 world[posit]["neighbours"][inputs[1]]["placement"][1])
-                    world_int = world[posit]["neighbours"][inputs[1]]["world"]
-                    return direction, place_description(world, direction), world_int
-                else:
-                    return direction, place_description(world, direction), world_int
+            if inventory.is_in_inventory(in_put[1]):
+                return "What do you mean?\n"
             else:
-                return posit, ("Can't walk there because {}\n"
-                               .format(world[posit]["neighbours"][inputs[1]]["why"])), world_int
-        except KeyError or IndexError:
-            return posit, "Where did you want to walk?"
-    else:
-        return posit, "Where did you want to walk?", world_int
+                return possible_interactions[in_put[1]]["desc"] + "\n"
+        except KeyError:
+            return "You can't do that\n"
+    if "around" == in_put[1]:
+        output = str()
+        output += square["description"]["place"] + "\n"
+        output += "You see:\n"
+        for keys, values in square["items"].items():
+            if inventory.is_in_inventory(keys):
+                pass
+            else:
+                output += "{}\n".format(values["desc"])
+        return "{:^}\n".format(output)
+    if in_put[1] in cardinals:
+        try:
+            return square["directions"][in_put[1]] + "\n"
+        except KeyError:
+            return "Where did you want to look?\n"
 
 
-def pickup(square, in_put, inventory):
-    item_pool = square["items"]
-    inputs = in_put.split(" ")
+def walker(square, in_put, world_int, posit):
+    _status = ""
     try:
-        if square["items"][inputs[1]]["pickup"] == "yes":
-            inventory.add_item(items.Item(inputs[1], item_pool[inputs[1]]["desc"]))
-    except KeyError:
-        b.progress("What did you want to pickup?\n")
-
-
-def inputter(worlds, posit):
-    """Inputter here is what takes commands, and sends them further along on its journey."""
-    logger, save = b.create_logger()
-    world_int = 0
-    inventory = items.Inventory()
-    in_put = str()
-    _status = str()
-    while in_put != "exit":
-        world = worlds[world_int]
-        square = world[posit]
-        in_put = input()
-        if "look" in in_put:
-            _status = look(square, in_put, inventory)
-        if "walk" in in_put or "go" in in_put:
-            posit, _status, world_int = walker(world, posit, in_put, world_int)
-        if "pickup" in in_put:
-            pickup(square, in_put, inventory)
-        if "open" in in_put:
-            _status = inventory
-        if "where am I" in in_put:
-            _status = str(posit) + "\n" + str(world_int)
-        if "save" in in_put:
-            save.debug("Posit: {}\nWorld: {}\nInventory: {}".format(posit, world_int, inventory))
-        logger.info("Posit: {}\nWorld: {}\nWorld_map: {}".format(posit, world_int, mapper(world, posit, inventory)))
-        print_to_screen(_status, inventory, world, posit)
-    else:
-        b.clear_console()
-        print_to_screen("Do you want to save?\n", inventory, world, posit)
-        in_put = input("yes/no: ")
-        if in_put == "yes":
-            save.debug("Posit: {}\nWorld: {}\nInventory: {}".format(posit, world_int, inventory))
-            sys.stdout.write("Goodbye\n")
-        elif in_put == "no":
-            sys.stdout.write("Goodbye\n")
+        direction = tuple(square[in_put]["coord"])
+        if square[in_put]["walk"] == "yes":
+            if square[in_put]["door"] == "yes":
+                direction = (square[in_put]["placement"][0],
+                             square[in_put]["placement"][1])
+                world_int = square[in_put]["world"]
+                return direction, _status, world_int
+            else:
+                return direction, _status, world_int
         else:
-            inputter(worlds, posit)
+            _status = ("Can't walk there because {}\n"
+                       .format(square[in_put]["why"]))
+            return posit, _status, world_int
+    except KeyError:
+        _status = "Where did you want to walk?"
+        return posit, _status, world_int
+
+
+def pickup(item_pool, in_put, inventory):
+    try:
+        if item_pool[in_put]["pickup"] == "yes":
+            inventory.add_item(items.Item(in_put, item_pool[in_put]["desc"]))
+            return "Picked {} up".format(in_put)
+        else:
+            return "Can't pick {} up".format(in_put)
+    except KeyError or IndexError:
+        return "What did you want to pickup?\n"
+
+
+def inputter(in_put, posit, square, inventory, world_int):
+    """Inputter here is what takes commands, and sends them further along on its journey."""
+    item_pool = square["items"]
+    walking = square["neighbours"]
+    inputs = in_put.split(" ")
+    _status = str()
+    looper = True
+    if "look" == inputs[0]:
+        _status = look(square, inputs, inventory)
+    if inputs[0] in ["go", "walk"]:
+        posit, _status, world_int = walker(walking, inputs[1], world_int, posit)
+    if "pickup" == inputs[0]:
+        _status = pickup(item_pool, inputs[1], inventory)
+    if "open" == inputs[0]:
+        _status = inventory
+    if "where am I" in in_put:
+        _status = str(posit) + "\n" + str(world_int)
+    # if "save" in in_put:
+        # save.debug("Posit: {}\nWorld: {}\nInventory: {}".format(posit, world_int, inventory))
+    if "exit" in in_put:
+        looper = False
+    b.clear_console()
+    return _status, posit, world_int, looper
 
 
 def main_part():
     """This initialises the whole thing, and is mostly used as a starting-point"""
-    b.clear_console()
+    world_int = 0
+    _status = str()
+    looper = True
+    posit = wc.SPAWN
+
+    logger, save = b.create_logger()
+    inventory = items.Inventory()
     worlds = open_file()
-    b.set_console()
-    spawn = wc.SPAWN
+
     sys.stdout.write("Enter description text here\n")
-    inputter(worlds, spawn)
+    while looper:
+        world = worlds[world_int]
+        square = world[posit]
+        mapper(world, posit, inventory)
+
+        print_to_screen(place_description(world, posit))
+
+        in_put = input("What do you want to do?\n")
+        _status, posit, world_int, looper = inputter(in_put, posit, square, inventory, world_int)
+        logger.info("Posit: {}\nWorld: {}\nInv: {}"
+                    .format(posit, world_int, inventory))
+        print_to_screen(_status)
+    else:
+        b.clear_console()
+        print_to_screen("Do you want to save?\n")
+        in_put = input("yes/no: ")
+        if in_put == "yes":
+            save.debug("Posit: {}\nWorld: {}\nInventory: {}"
+                       .format(posit, world_int, inventory))
+            sys.stdout.write("Goodbye\n")
+        elif in_put == "no":
+            sys.stdout.write("Goodbye\n")
+        else:
+            b.clear_console()
+            main_part()
 
 
 if __name__ == '__main__':
     """This is the stuff that is first printed out"""
+    b.set_console()
     sys.stdout.write("Start, or reload world\n")
     interput = input("What do you want to do? ")
     if interput == "start":
+        b.clear_console()
         main_part()
-    if interput == "reload world ":
-        interput = input("Are you really sure? ")
-        if interput == "yes":
+    if interput == "reload world":
+        b.clear_console()
+        ausput = input("Are you really sure? ")
+        if ausput == "yes":
             wc.runner()
-        else:
-            pass
+        elif ausput == "no":
+            main_part()
     # wc.mapping()

@@ -2,7 +2,8 @@ import json
 import itertools
 import CODE.Base as b
 
-
+x_axis = 9
+y_axis = 9
 
 SPAWN = (0, 4)
 
@@ -82,20 +83,17 @@ def central(world, each):
                    }
 
 
-def creator_world(grid, world, x_axis, y_axis, door, spawn=None):
+def creator_world(grid, world, door, spawn=None):
+    print("SPAWN: ", spawn)
     for each in grid:
         x_, y_ = each
         if x_ == 0 or y_ == 0 or x_ + 1 == y_axis or y_ + 1 == x_axis:  # If it is in any edge point
-            if spawn:
-                if each == spawn or each == door:
-                    central(world, each)
-                else:
-                    rim_border(world, each)
+            if spawn == each:
+                central(world, each)
+            elif door == each:
+                central(world, each)
             else:
-                if each == door:
-                    central(world, each)
-                else:
-                    rim_border(world, each)
+                rim_border(world, each)
         else:
             central(world, each)
 
@@ -126,30 +124,10 @@ def calc_neigh_rim(_cell_coord):
     return neighbour_rim
 
 
-def walkable(world, spawn):
+def walkable(world, spawn, next_map, placement, next_world):
     for each in world:
         for card in world[each]["neighbours"]:
             for key, value in world[each]["neighbours"][card].items():
-                if key == "coord":
-                    try:
-                        if world[value]["mapping"] == RIM:
-                            world[each]["neighbours"][card].update({"walk": "no", "why": "it's a wall"})
-                            world[each]["directions"].update({card: "You see a wall"})
-                        else:
-                            world[each]["neighbours"][card].update({"walk": "yes", "why": "It's open ground"})
-                            world[each]["directions"].update({card: "You see open ground"})
-                    except KeyError:
-                        world[each]["neighbours"][card].update({"walk": "no", "why": "there's nothing there"})
-                        if each == spawn:
-                            world[each]["directions"][card] = "You see a wall"
-                            world[each]["description"] = {"place": "You see a dark cave"}
-                        continue
-
-
-def doors(world, next_map, placement, next_world):
-    for each in world:
-        for card in world[each]["neighbours"]:
-            for key, value in world[each]["neighbours"][card].copy().items():
                 if key == "coord":
                     try:
                         if next_map == value:
@@ -160,38 +138,39 @@ def doors(world, next_map, placement, next_world):
                                                                     "placement": placement
                                                                     })
                             world[each]["directions"][card] = "it's a dark tunnel"
+                        elif world[value]["mapping"] == RIM:
+                            world[each]["neighbours"][card].update({"walk": "no", "why": "it's a wall"})
+                            world[each]["directions"].update({card: "You see a wall"})
                         else:
-                            pass
+                            world[each]["neighbours"][card].update({"walk": "yes", "why": "It's open ground"})
+                            world[each]["directions"].update({card: "You see open ground"})
                     except KeyError:
+                        world[each]["neighbours"][card].update({"walk": "no", "why": "there's nothing there"})
+                        if each == spawn:
+                            world[each]["directions"][card] = "You see a wall"
+                            world[each]["description"] = {"place": "You are in a cave"}
                         continue
 
 
-def caretaker(grid, world, x_axis, y_axis, number=0):
+def caretaker(grid, world):
     vr = WORLDS
     for key, value in vr.items():
         print("KEY: ", key)
-        if key == "world_1":
-            spawn = SPAWN
-        else:
-            spawn = None
-        print("SPAWN: ", spawn)
         print("DOORS: ", vr[key]["DOORS"])
         print("NEXT_MAP: ", vr[key]["NEXT_MAP"])
         output = "{}.json".format(key)
-        vr[key]["WORLD"] = creator_world(grid, world, x_axis, y_axis, vr[key]["DOORS"], spawn)
+        if key == "world_1":
+            vr[key]["WORLD"] = creator_world(grid, world, vr[key]["DOORS"], SPAWN)
+        else:
+            vr[key]["WORLD"] = creator_world(grid, world, vr[key]["DOORS"])
 
-        walkable(vr[key]["WORLD"], SPAWN)
-
-        doors(vr[key]["WORLD"], vr[key]["NEXT_MAP"], vr[key]["PLACEMENT"], vr[key]["NEXT_WORLD"])
+        walkable(vr[key]["WORLD"], SPAWN, vr[key]["NEXT_MAP"], vr[key]["PLACEMENT"], vr[key]["NEXT_WORLD"])
 
         with open(b.RESOURCES / output, "w") as outfile:
             json.dump({str(k): v for k, v in vr[key]["WORLD"].items()}, outfile, indent=4)
 
 
 def runner():
-    x_axis = 9
-    y_axis = 9
     world = dict()
-    x = 2
     grid = itertools.product(range(x_axis), range(y_axis))
-    caretaker(grid, world, x_axis, y_axis, x)
+    caretaker(grid, world)

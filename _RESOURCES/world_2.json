@@ -213,7 +213,7 @@
     },
     "(0, 4)": {
         "description": {
-            "place": "You see a dark cave"
+            "place": "You are in a cave"
         },
         "directions": {
             "north": "You see a wall",
@@ -2465,7 +2465,7 @@
             "north": "placeholder",
             "south": "placeholder",
             "west": "it's a dark tunnel",
-            "east": "placeholder"
+            "east": "You see open ground"
         },
         "items": {
             "item1": {
@@ -2534,7 +2534,7 @@
                     1
                 ],
                 "walk": "yes",
-                "why": "placeholder",
+                "why": "It's open ground",
                 "door": "no"
             }
         },
@@ -2547,7 +2547,7 @@
         "directions": {
             "north": "You see open ground",
             "south": "You see open ground",
-            "west": "You see a wall",
+            "west": "You see open ground",
             "east": "You see open ground"
         },
         "items": {
@@ -2602,8 +2602,8 @@
                     4,
                     0
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "It's open ground",
                 "door": "no"
             },
             "east": {
@@ -3174,7 +3174,7 @@
             "place": "How did you get here?"
         },
         "directions": {
-            "north": "You see a wall",
+            "north": "You see open ground",
             "south": "You see a wall",
             "west": "placeholder",
             "east": "You see open ground"
@@ -3188,8 +3188,8 @@
                     4,
                     0
                 ],
-                "walk": "no",
-                "why": "it's a wall",
+                "walk": "yes",
+                "why": "It's open ground",
                 "door": "no"
             },
             "south": {

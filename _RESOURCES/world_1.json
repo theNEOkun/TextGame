@@ -213,7 +213,7 @@
     },
     "(0, 4)": {
         "description": {
-            "place": "You see a dark cave"
+            "place": "You are in a cave"
         },
         "directions": {
             "north": "You see a wall",
@@ -3067,9 +3067,9 @@
             "east": "it's a dark tunnel"
         },
         "items": {
-            "map": {
-                "desc": "map",
-                "pickup": "yes"
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
             },
             "item2": {
                 "desc": "placeholder",
