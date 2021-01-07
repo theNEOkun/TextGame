@@ -43,7 +43,7 @@ def mapper(world, posit, inventory):
 
         return sys.stdout.write("{}".format(''.join(_printer)))  # Prints the map out
     else:
-        return ""
+        return sys.stdout.write(" ")
 
 
 def open_file():
@@ -64,7 +64,7 @@ def open_file():
 
 
 def place_description(world, posit):
-    return world[posit]["description"]["place"] + "\n"
+    return world[posit]["description"]["place"]
 
 
 def look(square, in_put, inventory):
@@ -74,15 +74,15 @@ def look(square, in_put, inventory):
     if "at" == in_put[1]:
         try:
             if inventory.is_in_inventory(in_put[1]):
-                return "What do you mean?\n"
+                return "What do you mean?"
             else:
-                return possible_interactions[in_put[1]]["desc"] + "\n"
+                return possible_interactions[in_put[1]]["desc"]
         except KeyError:
-            return "You can't do that\n"
+            return "You can't do that"
     if "around" == in_put[1]:
         output = str()
-        output += square["description"]["place"] + "\n"
-        output += "You see:\n"
+        output += square["description"]["place"]
+        output += "You see:"
         for keys, values in square["items"].items():
             if inventory.is_in_inventory(keys):
                 pass
@@ -91,9 +91,9 @@ def look(square, in_put, inventory):
         return "{:^}\n".format(output)
     if in_put[1] in cardinals:
         try:
-            return square["directions"][in_put[1]] + "\n"
+            return square["directions"][in_put[1]]
         except KeyError:
-            return "Where did you want to look?\n"
+            return "Where did you want to look?"
 
 
 def walker(square, in_put, world_int, posit):
@@ -109,7 +109,7 @@ def walker(square, in_put, world_int, posit):
             else:
                 return direction, _status, world_int
         else:
-            _status = ("Can't walk there because {}\n"
+            _status = ("Can't walk there because {}"
                        .format(square[in_put]["why"]))
             return posit, _status, world_int
     except KeyError:
@@ -125,7 +125,7 @@ def pickup(item_pool, in_put, inventory):
         else:
             return "Can't pick {} up".format(in_put)
     except KeyError or IndexError:
-        return "What did you want to pickup?\n"
+        return "What did you want to pickup?"
 
 
 def inputter(in_put, posit, square, inventory, world_int):
@@ -169,7 +169,6 @@ def main_part():
         world = worlds[world_int]
         square = world[posit]
         mapper(world, posit, inventory)
-
         print_to_screen(place_description(world, posit))
 
         in_put = input("What do you want to do?\n")
@@ -189,7 +188,7 @@ def main_part():
             sys.stdout.write("Goodbye\n")
         else:
             b.clear_console()
-            main_part()
+            pass
 
 
 if __name__ == '__main__':

@@ -222,9 +222,9 @@
             "east": "You see a wall"
         },
         "items": {
-            "map": {
-                "desc": "map",
-                "pickup": "yes"
+            "item1": {
+                "desc": "placeholder",
+                "pickup": "no"
             },
             "item2": {
                 "desc": "placeholder",

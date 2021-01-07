@@ -88,12 +88,18 @@ def creator_world(grid, world, door, spawn=None):
     for each in grid:
         x_, y_ = each
         if x_ == 0 or y_ == 0 or x_ + 1 == y_axis or y_ + 1 == x_axis:  # If it is in any edge point
-            if spawn == each:
-                central(world, each)
-            elif door == each:
-                central(world, each)
+            if spawn:
+                if spawn == each:
+                    central(world, each)
+                elif door == each:
+                    central(world, each)
+                else:
+                    rim_border(world, each)
             else:
-                rim_border(world, each)
+                if door == each:
+                    central(world, each)
+                else:
+                    rim_border(world, each)
         else:
             central(world, each)
 
@@ -163,6 +169,8 @@ def caretaker(grid, world):
             vr[key]["WORLD"] = creator_world(grid, world, vr[key]["DOORS"], SPAWN)
         else:
             vr[key]["WORLD"] = creator_world(grid, world, vr[key]["DOORS"])
+
+        # doors(vr[key]["WORLD"], vr[key]["NEXT_MAP"], vr[key]["PLACEMENT"], vr[key]["NEXT_WORLD"])
 
         walkable(vr[key]["WORLD"], SPAWN, vr[key]["NEXT_MAP"], vr[key]["PLACEMENT"], vr[key]["NEXT_WORLD"])
 
