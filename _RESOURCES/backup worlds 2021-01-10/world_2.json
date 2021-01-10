@@ -27,8 +27,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -37,8 +36,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -47,8 +45,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -57,8 +54,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -84,8 +80,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -94,8 +89,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -104,8 +98,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -114,8 +107,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -141,8 +133,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -151,8 +142,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -161,8 +151,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -171,8 +160,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -198,8 +186,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -208,8 +195,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -218,8 +204,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -228,8 +213,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -255,8 +239,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -265,8 +248,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -275,8 +257,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -285,8 +266,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -312,8 +292,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -322,8 +301,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -332,8 +310,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -342,8 +319,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -369,8 +345,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -379,8 +354,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -389,8 +363,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -399,8 +372,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -426,8 +398,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -436,8 +407,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -446,8 +416,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -456,8 +425,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -483,8 +451,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -493,8 +460,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -503,8 +469,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -513,8 +478,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -540,8 +504,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -550,8 +513,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -560,8 +522,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -570,8 +531,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -637,8 +597,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -647,8 +606,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -657,8 +615,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -667,8 +624,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -735,8 +691,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -745,8 +700,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -755,8 +709,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -765,8 +718,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -833,8 +785,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -843,8 +794,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -853,8 +803,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -863,8 +812,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -931,8 +879,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -941,8 +888,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -951,8 +897,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -961,8 +906,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1029,8 +973,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1039,8 +982,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1049,8 +991,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1059,8 +1000,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1127,8 +1067,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1137,8 +1076,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1147,8 +1085,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1157,8 +1094,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1225,8 +1161,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1235,8 +1170,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1245,8 +1179,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1255,8 +1188,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1283,8 +1215,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1293,8 +1224,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1303,8 +1233,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1313,8 +1242,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -1340,8 +1268,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1350,8 +1277,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1360,8 +1286,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1370,8 +1295,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -1437,8 +1361,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1447,8 +1370,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1457,8 +1379,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1467,8 +1388,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1535,8 +1455,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1545,8 +1464,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1555,8 +1473,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1565,8 +1482,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1633,8 +1549,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1643,8 +1558,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1653,8 +1567,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1663,8 +1576,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1731,8 +1643,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1741,8 +1652,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1751,8 +1661,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1761,8 +1670,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1829,8 +1737,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1839,8 +1746,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1849,8 +1755,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1859,8 +1764,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -1927,8 +1831,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -1937,8 +1840,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -1947,8 +1849,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -1957,8 +1858,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2025,8 +1925,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2035,8 +1934,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2045,8 +1943,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2055,8 +1952,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2083,8 +1979,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2093,8 +1988,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2103,8 +1997,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2113,8 +2006,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -2140,8 +2032,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2150,8 +2041,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2160,8 +2050,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2170,8 +2059,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -2237,8 +2125,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2247,8 +2134,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2257,8 +2143,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2267,8 +2152,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2335,8 +2219,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2345,8 +2228,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2355,8 +2237,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2365,8 +2246,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2433,8 +2313,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2443,8 +2322,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2453,8 +2331,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2463,8 +2340,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2531,8 +2407,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2541,8 +2416,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2551,8 +2425,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2561,8 +2434,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2629,8 +2501,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2639,8 +2510,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2649,8 +2519,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2659,8 +2528,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2727,8 +2595,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2737,8 +2604,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2747,8 +2613,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2757,8 +2622,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2825,8 +2689,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2835,8 +2698,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2845,8 +2707,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2855,8 +2716,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -2883,8 +2743,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2893,8 +2752,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -2903,8 +2761,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -2913,8 +2770,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -2980,8 +2836,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -2990,8 +2845,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3001,7 +2855,6 @@
                     "walk": "yes",
                     "why": "it's a tunnel",
                     "tunnel": "yes",
-                    "door": "no",
                     "world": 0,
                     "placement": [
                         4,
@@ -3016,12 +2869,11 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
-            "mapping": "T"
+            "mapping": "D"
         },
         "(4, 1)": {
             "description": {
@@ -3084,8 +2936,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3094,8 +2945,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3104,8 +2954,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3114,8 +2963,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3182,8 +3030,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3192,8 +3039,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3202,8 +3048,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3212,8 +3057,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3280,8 +3124,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3290,8 +3133,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3300,8 +3142,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3310,8 +3151,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3378,8 +3218,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3388,8 +3227,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3398,8 +3236,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3408,8 +3245,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3476,8 +3312,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3486,8 +3321,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3496,8 +3330,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3506,8 +3339,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3574,8 +3406,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3584,8 +3415,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3594,8 +3424,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3604,8 +3433,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3672,8 +3500,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3682,8 +3509,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3692,8 +3518,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3702,8 +3527,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3730,8 +3554,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3740,8 +3563,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3750,8 +3572,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3760,8 +3581,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -3787,8 +3607,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3797,8 +3616,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3807,8 +3625,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3817,8 +3634,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -3884,8 +3700,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3894,8 +3709,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -3904,8 +3718,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -3914,8 +3727,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -3982,8 +3794,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -3992,8 +3803,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4002,8 +3812,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4012,8 +3821,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4080,8 +3888,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4090,8 +3897,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4100,8 +3906,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4110,8 +3915,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4178,8 +3982,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4188,8 +3991,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4198,8 +4000,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4208,8 +4009,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4276,8 +4076,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4286,8 +4085,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4296,8 +4094,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4306,8 +4103,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4374,8 +4170,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4384,8 +4179,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4394,8 +4188,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4404,8 +4197,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4472,8 +4264,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4482,8 +4273,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4492,8 +4282,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4502,8 +4291,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4530,8 +4318,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4540,8 +4327,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4550,8 +4336,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4560,8 +4345,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -4587,8 +4371,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4597,8 +4380,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4607,8 +4389,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4617,8 +4398,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -4684,8 +4464,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4694,8 +4473,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4704,8 +4482,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4714,8 +4491,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4782,8 +4558,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4792,8 +4567,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4802,8 +4576,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4812,8 +4585,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4880,8 +4652,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4890,8 +4661,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4900,8 +4670,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -4910,8 +4679,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -4978,8 +4746,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -4988,8 +4755,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -4998,8 +4764,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5008,8 +4773,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5076,8 +4840,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5086,8 +4849,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5096,8 +4858,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5106,8 +4867,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5174,8 +4934,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5184,8 +4943,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5194,8 +4952,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5204,8 +4961,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5272,8 +5028,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5282,8 +5037,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5292,8 +5046,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5302,8 +5055,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5330,8 +5082,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5340,8 +5091,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5350,8 +5100,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5360,8 +5109,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -5387,8 +5135,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5397,8 +5144,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5407,8 +5153,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5417,8 +5162,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -5484,8 +5228,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5494,8 +5237,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5504,8 +5246,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5514,8 +5255,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5582,8 +5322,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5592,8 +5331,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5602,8 +5340,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5612,8 +5349,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5680,8 +5416,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5690,8 +5425,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5700,8 +5434,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5710,8 +5443,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5778,8 +5510,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5788,8 +5519,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5798,8 +5528,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5808,8 +5537,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5876,8 +5604,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5886,8 +5613,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5896,8 +5622,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -5906,8 +5631,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -5974,8 +5698,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -5984,8 +5707,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -5994,8 +5716,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6004,8 +5725,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -6072,8 +5792,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6082,8 +5801,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6092,8 +5810,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6102,8 +5819,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
@@ -6130,8 +5846,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6140,8 +5855,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6150,8 +5864,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6160,8 +5873,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6187,8 +5899,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6197,8 +5908,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6207,8 +5917,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6217,8 +5926,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6244,8 +5952,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6254,8 +5961,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6264,8 +5970,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6274,8 +5979,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6301,8 +6005,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6311,8 +6014,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6321,8 +6023,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6331,8 +6032,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6358,8 +6058,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6368,8 +6067,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6378,8 +6076,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6388,8 +6085,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6415,8 +6111,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6425,8 +6120,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6435,8 +6129,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6445,8 +6138,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6512,8 +6204,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6523,7 +6214,6 @@
                     "walk": "yes",
                     "why": "it's a tunnel",
                     "tunnel": "yes",
-                    "door": "no",
                     "world": 2,
                     "placement": [
                         0,
@@ -6538,8 +6228,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6548,12 +6237,11 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "key_needed": "no",
-            "mapping": "T"
+            "mapping": "D"
         },
         "(8, 6)": {
             "description": {
@@ -6576,8 +6264,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6586,8 +6273,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6596,8 +6282,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6606,8 +6291,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6633,8 +6317,7 @@
                     ],
                     "walk": "yes",
                     "why": "It's open ground",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6643,8 +6326,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6653,8 +6335,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6663,8 +6344,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"
@@ -6690,8 +6370,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "south": {
                     "coord": [
@@ -6700,8 +6379,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "west": {
                     "coord": [
@@ -6710,8 +6388,7 @@
                     ],
                     "walk": "no",
                     "why": "it's a wall",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 },
                 "east": {
                     "coord": [
@@ -6720,8 +6397,7 @@
                     ],
                     "walk": "no",
                     "why": "there's nothing there",
-                    "tunnel": "no",
-                    "door": "no"
+                    "tunnel": "no"
                 }
             },
             "mapping": "M"

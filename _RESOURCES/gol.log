@@ -1,85 +1,70 @@
-Posit: (4, 2)
-World: 1
-Inv: Name	Description
-map	map
-key	key with a blue band around it
-Posit: (4, 3)
-World: 1
-Inv: Name	Description
-map	map
-key	key with a blue band around it
-Posit: (4, 2)
-World: 1
-Inv: Name	Description
-map	map
-key	key with a blue band around it
-Posit: (4, 1)
-World: 1
-Inv: Name	Description
-map	map
-key	key with a blue band around it
-Posit: (4, 0)
-World: 1
-Inv: Name	Description
-map	map
-key	key with a blue band around it
-Posit: (4, 8)
+Posit: (4, 4)
 World: 0
 Inv: Name	Description
 map	map
-key	key with a blue band around it
+red key	It's a key with a red ribbon
+Posit: (4, 4)
+World: 0
+Inv: Name	Description
+map	map
+red key	It's a key with a red ribbon
+Posit: (4, 4)
+World: 0
+Inv: Name	Description
+map	map
+red key	It's a key with a red ribbon
+Posit: (4, 5)
+World: 0
+Inv: Name	Description
+map	map
+red key	It's a key with a red ribbon
+Posit: (4, 6)
+World: 0
+Inv: Name	Description
+map	map
+red key	It's a key with a red ribbon
 Posit: (4, 7)
 World: 0
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 6)
+red key	It's a key with a red ribbon
+Posit: (4, 8)
 World: 0
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 6)
-World: 0
+red key	It's a key with a red ribbon
+Posit: (4, 0)
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 6)
-World: 0
+red key	It's a key with a red ribbon
+Posit: (4, 1)
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 6)
-World: 0
+red key	It's a key with a red ribbon
+Posit: (4, 2)
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 5)
-World: 0
+red key	It's a key with a red ribbon
+Posit: (4, 3)
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
+red key	It's a key with a red ribbon
 Posit: (4, 4)
-World: 0
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 4)
-World: 0
-Inv: Name	Description
-map	map
-key	key with a blue band around it
+red key	It's a key with a red ribbon
 Posit: (4, 5)
-World: 0
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (4, 6)
-World: 0
+red key	It's a key with a red ribbon
+Posit: (5, 5)
+World: 1
 Inv: Name	Description
 map	map
-key	key with a blue band around it
-Posit: (3, 6)
-World: 0
-Inv: Name	Description
-map	map
-key	key with a blue band around it
+red key	It's a key with a red ribbon

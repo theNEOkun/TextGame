@@ -1,6 +1,6 @@
-(3, 6)
-0
+(5, 5)
+1
 Name	Description	Hidden_info
-map	map	placeholder
-key	key with a blue band around it	blue_key
+map	map	map
+red key	It's a key with a red ribbon	red key
 
