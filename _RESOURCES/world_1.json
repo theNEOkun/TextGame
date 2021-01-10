@@ -245,18 +245,18 @@
                 "east": "You see a wall"
             },
             "items": {
-                "map": {
-                    "desc": "map",
-                    "name": "map",
-                    "pickup": "yes",
-                    "hidden_info": "map",
+                "item1": {
+                    "desc": "placeholder",
+                    "name": "placeholder",
+                    "pickup": "no",
+                    "hidden_info": "placeholder",
                     "action": "placeholder"
                 },
-                "red key": {
-                    "desc": "It's a key with a red ribbon",
-                    "name": "red key",
+                "item2": {
+                    "desc": "placeholder",
+                    "name": "placeholder",
                     "pickup": "yes",
-                    "hidden_info": "red key",
+                    "hidden_info": "placeholder",
                     "action": "placeholder"
                 },
                 "item3": {
@@ -3248,9 +3248,7 @@
             "mapping": " "
         },
         "(4, 5)": {
-            "description": {
-                "place": "How did you get here?"
-            },
+            "description": "You're standing in the door frame",
             "directions": {
                 "north": "You see a wall",
                 "south": "You see a wall",
@@ -3303,7 +3301,7 @@
                 }
             },
             "mapping": "D",
-            "key_needed": "red key"
+            "key_needed": "yes"
         },
         "(4, 6)": {
             "description": {

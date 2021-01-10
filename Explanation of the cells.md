@@ -49,8 +49,8 @@ Is at the moment not used, and might change in the future.
 
 ### "interactions":
 
-Is where things like doors and chests are added and are used with "interact [interactable]", "open [interactable]" etc.
-in the example below interactx is changed to something to interact with, ex door or chest.
+Is where things like chests are added and are used with "interact [interactable]", "open [interactable]" etc.
+in the example below interactx is changed to something to interact with, ex chest.
 
 #### "desc":
 
@@ -68,157 +68,224 @@ Here you specify what action needs to be done. Example if it's a door then open.
 
 This is slightly harder to explain. I am working on implementing an easier to use version, though at the moment you have to specify a couple of things.
 
-If it's a door, you first describe the coordinates to where the door is, and then you write the direction to where that door is in that square. At
-the moment it is better to use words for what you want to happen.
+For example, the items from a chest that you wan to add to the players inventory
 
 
 ## Below here is a cell of RIM type:
 
-    "(0, 3)": {
-        "description": {
-            "place": "How did you get here?"
-        },
-        "directions": {
-            "north": "placeholder",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see open ground"
-        },
-        "interactions": {
-            "interact1": "placeholder"
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    3
-                ],
-                "walk": "no",
-                "why": "there's nothing there",
-                "tunnel": "no"
+        "(0, 0)": {
+            "description": {
+                "place": "How did you get here?"
             },
-            "south": {
-                "coord": [
-                    1,
-                    3
-                ],
-                "walk": "yes",
-                "why": "It's open ground",
-                "tunnel": "no"
+            "directions": {
+                "north": "placeholder",
+                "south": "You see a wall",
+                "west": "placeholder",
+                "east": "You see a wall"
             },
-            "west": {
-                "coord": [
-                    0,
-                    2
-                ],
-                "walk": "no",
-                "why": "it's a wall",
-                "tunnel": "no"
+            "interactions": {
+                "interact1": "placeholder"
             },
-            "east": {
-                "coord": [
-                    0,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground",
-                "tunnel": "no"
-            }
-        },
-        "mapping": "M"
-    },
+            "neighbours": {
+                "north": {
+                    "coord": [
+                        -1,
+                        0
+                    ],
+                    "walk": "no",
+                    "why": "there's nothing there",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "south": {
+                    "coord": [
+                        1,
+                        0
+                    ],
+                    "walk": "no",
+                    "why": "it's a wall",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "west": {
+                    "coord": [
+                        0,
+                        -1
+                    ],
+                    "walk": "no",
+                    "why": "there's nothing there",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "east": {
+                    "coord": [
+                        0,
+                        1
+                    ],
+                    "walk": "no",
+                    "why": "it's a wall",
+                    "tunnel": "no",
+                    "door": "no"
+                }
+            },
+            "mapping": "M"
 	
 ## Below here is a cell of "GROUND" type
 
-    "(0, 4)": {
-        "description": {
-            "place": "You are in a cave"
-        },
-        "directions": {
-            "north": "You see a wall",
-            "south": "You see open ground",
-            "west": "You see a wall",
-            "east": "You see a wall"
-        },
-        "items": {
-            "map": {
-                "desc": "map",
-                "pickup": "yes",
-                "hidden_info": "placeholder",
-                "action": "placeholder"
+        "(4, 6)": {
+            "description": {
+                "place": "placeholder"
             },
-            "key": {
-                "desc": "key with a blue band around it",
-                "pickup": "yes",
-                "hidden_info": "blue_key",
-                "action": "placeholder"
+            "directions": {
+                "north": "You see open ground",
+                "south": "You see open ground",
+                "west": "You see a closed door",
+                "east": "You see open ground"
             },
-            "item3": {
-                "desc": "placeholder",
-                "pickup": "no",
-                "hidden_info": "placeholder",
-                "action": "placeholder"
-            }
-        },
-        "interactions": {
-            "interact1": {
-                "desc": "placeholder",
-                "key": "no",
-                "action": "placeholder",
-                "happening": "placeholder"
+            "items": {
+                "item1": {
+                    "desc": "placeholder",
+                    "name": "placeholder",
+                    "pickup": "no",
+                    "hidden_info": "placeholder",
+                    "action": "placeholder"
+                },
+                "item2": {
+                    "desc": "placeholder",
+                    "name": "placeholder",
+                    "pickup": "yes",
+                    "hidden_info": "placeholder",
+                    "action": "placeholder"
+                },
+                "item3": {
+                    "desc": "placeholder",
+                    "name": "placeholder",
+                    "pickup": "no",
+                    "hidden_info": "placeholder",
+                    "action": "placeholder"
+                }
             },
-            "interact2": {
-                "desc": "placeholder",
-                "key": "no",
-                "action": "placeholder",
-                "happening": "placeholder"
+            "interactions": {
+                "interact1": {
+                    "desc": "placeholder",
+                    "key": "no",
+                    "action": "placeholder",
+                    "happening": "placeholder"
+                },
+                "interact2": {
+                    "desc": "placeholder",
+                    "key": "no",
+                    "action": "placeholder",
+                    "happening": "placeholder"
+                },
+                "interact3": {
+                    "desc": "placeholder",
+                    "key": "no",
+                    "action": "placeholder",
+                    "happening": "placeholder"
+                }
             },
-            "interact3": {
-                "desc": "placeholder",
-                "key": "no",
-                "action": "placeholder",
-                "happening": "placeholder"
-            }
-        },
-        "neighbours": {
-            "north": {
-                "coord": [
-                    -1,
-                    4
-                ],
-                "walk": "no",
-                "why": "there's nothing there",
-                "tunnel": "no"
+            "neighbours": {
+                "north": {
+                    "coord": [
+                        3,
+                        6
+                    ],
+                    "walk": "yes",
+                    "why": "It's open ground",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "south": {
+                    "coord": [
+                        5,
+                        6
+                    ],
+                    "walk": "yes",
+                    "why": "It's open ground",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "west": {
+                    "coord": [
+                        4,
+                        5
+                    ],
+                    "walk": "no",
+                    "why": "it's closed door",
+                    "tunnel": "no",
+                    "door": "yes",
+                    "if_open": "(4, 6)\nwest\t(4, 4)\neast"
+                },
+                "east": {
+                    "coord": [
+                        4,
+                        7
+                    ],
+                    "walk": "yes",
+                    "why": "It's open ground",
+                    "tunnel": "no",
+                    "door": "no"
+                }
             },
-            "south": {
-                "coord": [
-                    1,
-                    4
-                ],
-                "walk": "yes",
-                "why": "It's open ground",
-                "tunnel": "no"
+            "key_needed": "no",
+            "mapping": "R"
+			
+## Below is a cell of DOOR type:
+
+        "(4, 5)": {
+            "description": "You're standing in the door frame",
+            "directions": {
+                "north": "You see a wall",
+                "south": "You see a wall",
+                "west": "You see open ground",
+                "east": "You see open ground"
             },
-            "west": {
-                "coord": [
-                    0,
-                    3
-                ],
-                "walk": "no",
-                "why": "it's a wall",
-                "tunnel": "no"
+            "interactions": {
+                "interact1": "placeholder"
             },
-            "east": {
-                "coord": [
-                    0,
-                    5
-                ],
-                "walk": "no",
-                "why": "it's a wall",
-                "tunnel": "no"
-            }
-        },
-        "key_needed": "no",
-        "mapping": "R"
-    },
+            "neighbours": {
+                "north": {
+                    "coord": [
+                        3,
+                        5
+                    ],
+                    "walk": "no",
+                    "why": "it's a wall",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "south": {
+                    "coord": [
+                        5,
+                        5
+                    ],
+                    "walk": "no",
+                    "why": "it's a wall",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "west": {
+                    "coord": [
+                        4,
+                        4
+                    ],
+                    "walk": "yes",
+                    "why": "It's open ground",
+                    "tunnel": "no",
+                    "door": "no"
+                },
+                "east": {
+                    "coord": [
+                        4,
+                        6
+                    ],
+                    "walk": "yes",
+                    "why": "It's open ground",
+                    "tunnel": "no",
+                    "door": "no"
+                }
+            },
+            "mapping": "D",
+            "key_needed": "yes"
 	
