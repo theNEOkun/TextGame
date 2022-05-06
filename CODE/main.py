@@ -1,4 +1,5 @@
-import CODE.InputOutput as b
+import CODE.InputOutput as InOut
+import CODE.logger as Logger
 import CODE.items as items
 from time import sleep
 from ast import literal_eval
@@ -15,11 +16,11 @@ def mapper(world, posit, inventory, size):
         for _cell in world:
             if world[_cell]["mapping"] != wc.RIM:
                 if world[_cell] != world[posit]:
-                    _printer.append(b.get_print_value(world[_cell]["mapping"]))
+                    _printer.append(InOut.get_print_value(world[_cell]["mapping"]))
                 else:
-                    _printer.append(b.get_print_value(wc.PLAYER))
+                    _printer.append(InOut.get_print_value(wc.PLAYER))
             else:
-                _printer.append(b.get_print_value(wc.RIM))
+                _printer.append(InOut.get_print_value(wc.RIM))
 
         while _i < len(_printer):
             _printer.insert(_i, "\n")  # Adds linebreaks where needed.
@@ -251,45 +252,44 @@ def main_part(_status, posit=wc.SPAWN, world_int=0, incoming_inventory=None):
     else:
         inventory = items.Inventory()
 
-    logger, save, screen = b.create_logger()
-    worlds, world_size = b.open_file()
+    logger, save, screen = Logger.create_logger()
     while looper:
         world_size_num = world_size[world_int]
         world = worlds[world_int]  # world_int is taken from the map itself, and goes 0=world_1, 1=world_2 etc
         square = world[posit]  # This is the ground-square the player is standing on.
         logger.info("Posit: {}\nWorld: {}\nInv: {}"
                     .format(posit, world_int, inventory))
-        b.print_to_screen(_status, mapper(world, posit, inventory, world_size_num))
+        InOut.print_to_screen(_status, mapper(world, posit, inventory, world_size_num))
         in_put = input("What do you want to do?\n")
         _status, posit, world_int, looper = inputter(in_put, posit, square, inventory, world_int, save, world)
     else:
-        b.clear_console()
-        b.print_to_screen("Do you want to save?\n")
+        InOut.clear_console()
+        InOut.print_to_screen("Do you want to save?\n")
         in_put = input("yes/no: ")
         if in_put == "yes":
             save.debug("{}\n{}\n{}\n"
                        .format(posit, world_int, inventory.saveer()))
-            b.print_to_screen("The game has been saved\n\tGoodbye\n")
+            InOut.print_to_screen("The game has been saved\n\tGoodbye\n")
         elif in_put == "no":
-            b.print_to_screen("Goodbye\n")
+            InOut.print_to_screen("Goodbye\n")
         else:
-            b.clear_console()
+            InOut.clear_console()
             pass
 
 
 if __name__ == '__main__':
     """This is the stuff that is first printed out"""
 
-    b.set_console()
-    b.print_to_screen("Start, or reload world\n")
+    InOut.set_console()
+    InOut.print_to_screen("Start, or reload world\n")
     interput = input("What do you want to do?\n")
     if interput == "start":
-        b.clear_console()
+        InOut.clear_console()
         interput = input("Do you want to load a save?\n")
         if interput == "yes":
             try:
                 inventory_outside = items.Inventory()
-                position, world_int_save, inventory_out = b.load_save(inventory_outside)
+                position, world_int_save, inventory_out = InOut.load_save(inventory_outside)
                 ingoing_status = "The save has loaded"
                 main_part(ingoing_status, literal_eval(position),
                           literal_eval(world_int_save),
@@ -301,7 +301,7 @@ if __name__ == '__main__':
             ingoing_status = "Enter description text here\n"
             main_part(ingoing_status)
     if interput == "reload world":
-        b.clear_console()
+        InOut.clear_console()
         ausput = input("Are you really sure?\n")
         if ausput == "yes":
             wc.runner()
