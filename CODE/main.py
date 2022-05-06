@@ -4,29 +4,17 @@ import CODE.items as items
 from time import sleep
 from ast import literal_eval
 import CODE.world_creator as wc
+import CODE.world as World_code
+
+import CODE.char as Char
 
 
-def mapper(world, posit, inventory, size):
-    """Handles the map, and its format"""
+World: World_code.world
 
-    x_axis, y_axis = size
-    _printer = []
-    _i = x_axis
-    if inventory.is_in_inventory("map"):
-        for _cell in world:
-            if world[_cell]["mapping"] != wc.RIM:
-                if world[_cell] != world[posit]:
-                    _printer.append(InOut.get_print_value(world[_cell]["mapping"]))
-                else:
-                    _printer.append(InOut.get_print_value(wc.PLAYER))
-            else:
-                _printer.append(InOut.get_print_value(wc.RIM))
 
-        while _i < len(_printer):
-            _printer.insert(_i, "\n")  # Adds linebreaks where needed.
-            _i += x_axis + 1
-
-        return "{}".format(''.join(_printer))  # Prints the map out
+def mapper(char: Char) -> string:
+    if char.is_in_inventory("map"):
+        return World.print_map()
     else:
         return " "
 
@@ -35,34 +23,6 @@ def place_description_global(world, posit):
     """Just takes the description of the place the player currently is in"""
 
     return world[posit]["description"]["place"] + "\n"
-
-
-def door_opener(square, world, door_square, dirr, key_item):
-    """This handles the opening of doors"""
-
-    door_interact = square["neighbours"][dirr]
-
-    def updater_door(incoming_order, updater_world_door):
-        for each in incoming_order:
-            coords, direction = each.split("\n")
-            updater_world_door[literal_eval(coords)]["neighbours"][direction]["walk"] = "yes"
-            updater_world_door[literal_eval(coords)]["directions"][direction] = "You see an open door"
-
-    if door_square:
-        if door_square["key_needed"] == "no":
-            input_orders = door_interact["if_open"].split("\t")
-            updater_door(input_orders, world)
-            _status = "You opened the door"
-            return _status
-        else:
-            if key_item == door_square["key_needed"]:
-                input_orders = door_interact["if_open"].split("\t")
-                updater_door(input_orders, world)
-                _status = "You opened the door with the {}".format(key_item)
-                return _status
-            else:
-                _status = "That's the wrong key"
-                return _status
 
 
 def interacter(square, inventory, action, key_item, interactive_item):
@@ -254,12 +214,10 @@ def main_part(_status, posit=wc.SPAWN, world_int=0, incoming_inventory=None):
 
     logger, save, screen = Logger.create_logger()
     while looper:
-        world_size_num = world_size[world_int]
-        world = worlds[world_int]  # world_int is taken from the map itself, and goes 0=world_1, 1=world_2 etc
-        square = world[posit]  # This is the ground-square the player is standing on.
+        World = World_code.world(world_int, posit)
         logger.info("Posit: {}\nWorld: {}\nInv: {}"
-                    .format(posit, world_int, inventory))
-        InOut.print_to_screen(_status, mapper(world, posit, inventory, world_size_num))
+                    .format(posit, World.world_int, inventory))
+        InOut.print_to_screen(_status, mapper(world, posit, inventory, World.world_size_num))
         in_put = input("What do you want to do?\n")
         _status, posit, world_int, looper = inputter(in_put, posit, square, inventory, world_int, save, world)
     else:
