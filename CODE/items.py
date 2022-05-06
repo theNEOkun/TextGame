@@ -10,10 +10,10 @@ class Inventory(object):
     def __init__(self):
         self.items = {}
 
-    def add_item(self, item):
+    def add_item(self, item: Item):
         self.items[item.name] = item
 
-    def is_in_inventory(self, item):
+    def is_in_inventory(self, item: Item):
         if self.items:
             if item in self.items:
                 return True

@@ -25,36 +25,61 @@ class world:
         pass
 
 
-    def open_door(self, door_square: tuple, dirr: string):
+    def describe_place(self):
+        """Just takes the description of the place the player currently is in"""
+        return self.world[self.char_pos]["description"]["place"] + "\n"
 
-        door_interact = curr_square["neighbours"][dirr]
 
-        """This handles the opening of doors"""
+    def get_items(self) -> list:
+        return self.curr_square["items"].items()
 
-        def updater_door(incoming_order, updater_world_door):
-            for each in incoming_order:
-                coords, direction = each.split("\n")
-                updater_world_door[literal_eval(coords)]["neighbours"][direction]["walk"] = "yes"
-                updater_world_door[literal_eval(coords)]["directions"][direction] = "You see an open door"
 
-        if door_square["key_needed"] == "no":
-            input_orders = door_interact["if_open"].split("\t")
-            updater_door(input_orders, world)
-            _status = "You opened the door"
-            return _status
+    def get_item(self, item: string) -> dict:
+        if self.curr_square["mapping"] != wc.DOORS:
+            item_pool = self.curr_square["items"]
+            item = " ".join(inputs[1:])
+            _status = pickup(item_pool, item, inventory)
         else:
-            if key_item == door_square["key_needed"]:
-                input_orders = door_interact["if_open"].split("\t")
-                updater_door(input_orders, world)
-                _status = "You opened the door with the {}".format(key_item)
-                return _status
+            _status = "There's nothing to pick up here"
+
+        return _status
+
+
+    def get_interactions(self) -> list:
+        return self.curr_square["interactions"].items()
+
+
+    def get_interaction(self, interaction: string) -> dict:
+        return self.curr_square["interactions"][interaction]
+
+
+    def look_cardinals(self, cardinal: string):
+        return self.curr_square["directions"][cardinal]
+
+
+    def look_around(self, inventory: Inventory):
+        output = str()
+        output += square["description"]["place"] + "\n"
+        output += "You see:\n"
+        for keys, values in self.get_items():
+            if inventory.is_in_inventory(keys):  # Can't look at something you already have
+                pass
             else:
-                _status = "That's the wrong key"
-                return _status
+                output += "{}\n".format(values["desc"])
+        output += "You also see:\n"
+        for openables, values in self.get_interactions():
+            output += "{}\n".format(values["desc"])
+        return "{:^}\n".format(output)
 
 
-    def look(self):
-        pass
+    def look_at(self, item:string):
+        try:
+            if inventory.is_in_inventory(item):  # In case player has an item from the square in his inventory
+                return "What do you mean?"
+            else:
+                return self.get_item(item)["desc"]
+        except KeyError:
+            return "You can't do that"
 
 
     def neighbour_cells(self):
@@ -89,3 +114,6 @@ class world:
         change_world(world_int)
         walk(init_char_pos)
 
+
+if __name__ == '__main__':
+    pass

@@ -19,92 +19,6 @@ def mapper(char: Char) -> string:
         return " "
 
 
-def place_description_global(world, posit):
-    """Just takes the description of the place the player currently is in"""
-
-    return world[posit]["description"]["place"] + "\n"
-
-
-def interacter(square, inventory, action, key_item, interactive_item):
-    """This handles everything regarding interactions with things in the world"""
-
-    def chest_opener(inventory_chest_adder, incoming_interactions):
-        if incoming_interactions["happening"]:
-            incoming_interactions["desc"] = "the {} seems {}ed".format(interactive_item, action)
-            chest_items = incoming_interactions["happening"].split("\t")
-            for things in chest_items:
-                name, desc, hidden = things.split("\n")
-                inventory_chest_adder.add_item(items.Item(name,
-                                                          desc,
-                                                          hidden))
-            return "You opened the chest and got some items"
-        else:
-            return "There's nothing in the chest"
-    try:
-        sleep(2)
-        interactions = square["interactions"][interactive_item]
-        _status = ""
-        if action == "open":
-            if interactive_item == "chest":
-                if action in interactions["action"]:
-                    if interactions["key"] != "no":
-                        if key_item == interactions["key"]:
-                            _status = chest_opener(inventory, interactions)
-                        else:
-                            _status = "That's the wrong item"
-                    else:
-                        _status = chest_opener(inventory, interactions)
-        if action == "interact":
-            if inventory.is_in_inventory(interactions["key"]):
-                if action in interactions["action"]:
-                    _status = interactions["happening"]
-            else:
-                _status = "You need a specific item to do that"
-        if action == "pull":
-            pass
-        if action == "touch":
-            pass
-    except KeyError:
-        _status = "You can't {} that {}".format(action, interactive_item)
-
-    return _status
-
-
-def look(square, in_put, inventory):
-    """look here takes all the "look" input the player gives"""
-
-    possible_interactions = square["interactions"]
-    possible_items = square["items"]
-    cardinals = ("north", "south", "east", "west")
-
-    if "at" == in_put[1]:
-        try:
-            if inventory.is_in_inventory(in_put[1]):  # In case player has an item from the square in his inventory
-                return "What do you mean?"
-            else:
-                return possible_interactions[in_put[1]]["desc"]
-        except KeyError:
-            return "You can't do that"
-    if "around" == in_put[1]:
-        output = str()
-        output += square["description"]["place"] + "\n"
-        output += "You see:\n"
-        for keys, values in possible_items.items():
-            if inventory.is_in_inventory(keys):  # Can't look at something you already have
-                pass
-            else:
-                output += "{}\n".format(values["desc"])
-        output += "You also see:\n"
-        for openables, values in possible_interactions.items():
-            output += "{}\n".format(values["desc"])
-        return "{:^}\n".format(output)
-    if in_put[1] in cardinals:  # When player is looking in a given direction
-        try:
-            return square["directions"][in_put[1]]
-        except KeyError:
-            return "Where did you want to look?"
-
-
 def walker(square_neighs, in_put, world_int, posit, world):
     """Walker takes care of all things walking, where the player is placed both in a given map, and when walking to
     the next map"""
@@ -162,19 +76,13 @@ def inputter(in_put, posit, square, inventory, world_int, save, walk_world):
             _status = look(square, inputs, inventory)
         else:
             _status = "There's nothing to see here"
-    if inputs[0] in ["go", "walk"]:
+    elif inputs[0] in ["go", "walk"]:
         walking = square["neighbours"]
         posit, _status, world_int = walker(walking, inputs[1], world_int, posit, walk_world)
-    if "pickup" == inputs[0]:
-        if square["mapping"] != wc.DOORS:
-            item_pool = square["items"]
-            item = " ".join(inputs[1:])
-            _status = pickup(item_pool, item, inventory)
-        else:
-            _status = "There's nothing to pick up here"
-    if "inventory" == in_put or "inv" == in_put:
-        _status = inventory
-    if "interact" in in_put or "touch" in inputs[0] or "pull" in inputs[0] or "open" in inputs[0]:
+    elif "pickup" == inputs[0]:
+        if "inventory" == in_put or "inv" == in_put:
+            _status = inventory
+    elif "interact" in in_put or "touch" in inputs[0] or "pull" in inputs[0] or "open" in inputs[0]:
         if "door" in in_put:
             if "the" in in_put:
                 nyckel = " ".join(inputs[-2:])
@@ -192,12 +100,12 @@ def inputter(in_put, posit, square, inventory, world_int, save, walk_world):
             else:
                 input_item = inputs[1]
             _status = interacter(square, inventory, inputs[0], " ".join(inputs[3:]), input_item)
-    if "where am I" in in_put:
+    elif "where am I" in in_put:
         _status = str(posit) + "\n" + str(world_int)
-    if "save" in in_put:
+    elif "save" in in_put:
         save.debug("{}\n{}\n{}\n".format(posit, world_int, inventory.saveer()))
         _status = "The game has been saved"
-    if "exit" in in_put:
+    elif "exit" in in_put:
         looper = False
     return _status, posit, world_int, looper
 
@@ -235,9 +143,7 @@ def main_part(_status, posit=wc.SPAWN, world_int=0, incoming_inventory=None):
             pass
 
 
-if __name__ == '__main__':
-    """This is the stuff that is first printed out"""
-
+def main():
     InOut.set_console()
     InOut.print_to_screen("Start, or reload world\n")
     interput = input("What do you want to do?\n")
@@ -267,3 +173,7 @@ if __name__ == '__main__':
             ingoing_status = "Starting the game"
             main_part(ingoing_status)
     # wc.mapping()
+
+
+if __name__ == '__main__':
+    main()
