@@ -2,6 +2,7 @@ import unittest
 
 from char import Char
 from world import World
+from inventory import Item
 
 class TestWorld(unittest.TestCase):
 
@@ -22,6 +23,12 @@ class TestChar(unittest.TestCase):
 
     def test_add_to_inv(self):
         char = Char()
+        item = Item("name", "desc", "hidden_info")
+        char.addToInv(item)
+        self.assertTrue(char.checkInv(item))
+        self.assertEqual(item, char.getItemFromInv(item))
+        char.remFromInv(item)
+        self.assertFalse(char.checkInv(item))
 
 
     def test_char_pos(self):
