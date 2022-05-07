@@ -6,9 +6,6 @@ from inventory import Item
 
 class TestWorld(unittest.TestCase):
 
-    def test_assert_true(self):
-        self.assertTrue(True)
-
     def test_read_square(self):
         pass
 
@@ -16,10 +13,6 @@ class TestWorld(unittest.TestCase):
         pass
 
 class TestChar(unittest.TestCase):
-
-    def test_assert_true(self):
-        self.assertTrue(True)
-
 
     def test_add_to_inv(self):
         char = Char()

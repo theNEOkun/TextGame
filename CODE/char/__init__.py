@@ -2,7 +2,7 @@ from inventory import Inventory
 from inventory import Item
 
 
-class Char:
+class Char(object):
 
     char_x: int
     char_y: int
@@ -30,6 +30,11 @@ class Char:
 
 
     def walk(self, ew: int = 1, ns: int = 1):
+        """
+        Used to walk a char
+        :param ew > 0 = walk east, < 0 = walk west
+        :param ns > 0 = walk north, < 0 = walk south
+        """
         if ns != 0:
             if ns > 0:
                 self.char_y += self.step_size
@@ -53,9 +58,19 @@ class Char:
         return (self.char_x, self.char_y)
 
 
+    def __str__(self) -> str:
+        return "Name: {}\nInv: {}".format(self.name, self.inventory)
+
+
     def __init__(self, pos: tuple = (0, 0)):
         self.setPos(pos)
         self.inventory = Inventory()
+
+
+    def __init__(self, name: str = "Steve", inv: Inventory = Inventory(), pos: tuple = (0, 0)):
+        self.name = name
+        self.inventory = inv
+        self.setPos(pos)
 
 
 if __name__ == '__main__':
