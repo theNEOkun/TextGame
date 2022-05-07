@@ -1,4 +1,3 @@
-
 class Item(object):
     def __init__(self, name, desc, hidden_info):
         self.name = name
