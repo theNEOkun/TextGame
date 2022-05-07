@@ -52,7 +52,7 @@ class Inventory(object):
             return False
 
 
-    def hidden_info(self, secret: string):
+    def hidden_info(self, secret: str):
         """Checks if some item has a secret"""
         item_status = False
         for item in self.items.values():

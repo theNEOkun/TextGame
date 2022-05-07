@@ -33,10 +33,22 @@ class TestChar(unittest.TestCase):
 
     def test_char_pos(self):
         pos = (0, 0)
-        char = Char(pos)
+        char = Char()
         self.assertEqual(pos, char.getPos())
         char.setPos((1, 0))
         self.assertEqual((1, 0), char.getPos())
+
+
+    def test_walk(self):
+        char = Char()
+        char.walk(1, 0)
+        self.assertEqual((1, 0), char.getPos())
+        char.walk(0, 1)
+        self.assertEqual((1, 1), char.getPos())
+        char.walk(0, -1)
+        self.assertEqual((1, 0), char.getPos())
+        char.walk(-1, 0)
+        self.assertEqual((0, 0), char.getPos())
 
 
 
