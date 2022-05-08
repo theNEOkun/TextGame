@@ -1,3 +1,13 @@
+import os
+import sys
+import shutil
+import logging
+import CODE.world_creator as wc
+from CODE.inventory import Item
+from pathlib import Path
+from ast import literal_eval
+import json
+
 RESOURCES = Path(__file__).parent / "../_RESOURCES/"
 
 COLUMNS, LINES = shutil.get_terminal_size()
@@ -87,7 +97,7 @@ def load_save(incoming_inventory):
     try:
         for each in inventory_outgoing:
             each_key, each_value, each_hidden = each.split("\t")
-            incoming_inventory.add_item(items.Item(each_key, each_value, each_hidden))
+            incoming_inventory.add_item(Item(each_key, each_value, each_hidden))
     except ValueError:
         pass
     return posit, world_int_output, incoming_inventory

@@ -1,7 +1,8 @@
+import world_creator as wc
 
 
 def main():
-    pass
+    wc.runner()
 
 
 if __name__ == '__main__':
