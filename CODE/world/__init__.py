@@ -29,7 +29,7 @@ class World:
         if not self.viableCell(cell_pos):
             return {}
 
-        return self.__world_cells[str(cell_pos)]
+        return self.__world_cells[cell_pos]
 
 
     def getItems(self, cell_pos: tuple) -> dict:
@@ -59,16 +59,28 @@ class World:
         left = (y_, x_-1)
         right = (y_, x_+1)
 
-        if y_ > 0 and self.__world_cells[str(up)]:
-            returnlist.append({up: self.__world_cells[str(up)]})
-        if y_ < self.__world_size[1] and self.__world_cells[str(down)]:
-            returnlist.append({down: self.__world_cells[str(down)]})
-        if x_ > 0 and self.__world_cells[str(left)]:
-            returnlist.append({left: self.__world_cells[str(left)]})
-        if x_ < self.__world_size[0] and self.__world_cells[str(right)]:
-            returnlist.append({right: self.__world_cells[str(right)]})
+        if y_ > 0 and self.__world_cells[up]:
+            returnlist.append({up: self.__world_cells[up]})
+        if y_ < self.__world_size[1] and self.__world_cells[down]:
+            returnlist.append({down: self.__world_cells[down]})
+        if x_ > 0 and self.__world_cells[left]:
+            returnlist.append({left: self.__world_cells[left]})
+        if x_ < self.__world_size[0] and self.__world_cells[right]:
+            returnlist.append({right: self.__world_cells[right]})
 
         return returnlist
+
+    
+    def getDescriptionPlace(self, cell_pos: tuple) -> str:
+        if not self.viableCell(cell_pos):
+            return "How did you get here?"
+        return self.__world_cells[cell_pos]["description"]["place"]
+
+
+    def getDescriptionDirection(self, cell_pos: tuple) -> str:
+        if not self.viableCell(cell_pos):
+            return "You see a wall"
+        return self.__world_cells[cell_pos]["description"]["look"]
 
 
     def getMap(self, position: tuple) -> str:
@@ -76,7 +88,6 @@ class World:
         _printer = []
         _i = x_axis
         world = self.__world_cells
-        position = str(position)
         for _cell, value in world.items():
             if world[_cell]["mapping"] != wc.RIM:
                 if _cell != position:

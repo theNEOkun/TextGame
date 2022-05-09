@@ -120,6 +120,26 @@ class TestWorld(unittest.TestCase):
         self.assertEqual(cell_pos, [(0, 1), (2, 1), (1, 0), (1, 2)])
 
 
+    def test_get_description_place(self):
+        world = getWorld()
+        curr_pos = (0, 0)
+        descript = world.getDescriptionPlace(curr_pos)
+        self.assertEqual(descript, "It is grassland")
+        curr_pos = (-1, 0)
+        descript = world.getDescriptionPlace(curr_pos)
+        self.assertEqual(descript, "How did you get here?")
+
+
+    def test_get_description_direction(self):
+        world = getWorld()
+        curr_pos = (0, 0)
+        descript = world.getDescriptionDirection(curr_pos)
+        self.assertEqual(descript, "You see grassland")
+        curr_pos = (-1, 0)
+        descript = world.getDescriptionDirection(curr_pos)
+        self.assertEqual(descript, "You see a wall")
+
+
 class TestChar(unittest.TestCase):
 
     def test_add_to_inv(self):

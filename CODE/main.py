@@ -13,6 +13,7 @@ def main():
     char = Char(pos = wc.SPAWN)
 
     mc = MainClass(world, char)
+    mc.main_loop()
 
 
 if __name__ == '__main__':

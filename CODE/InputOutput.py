@@ -33,9 +33,9 @@ def print_to_screen(this_output=str(), _map=str()):
     """Prints to console in given format"""
 
     clear_console()
-    sys.stdout.write("{}\n".format(_map))
+    print("{}\n".format(_map))
 
-    sys.stdout.write("\033[0m{}\n".format(this_output))
+    print("\033[0m{}\n".format(this_output))
 
 
 def get_print_value(_val: str) -> str:
@@ -59,8 +59,19 @@ def get_print_value(_val: str) -> str:
 
 
 def get_file(file_name: str):
+
+    def evaluator(incoming):
+        incoming_world = {}
+        for key, value in incoming.items():
+            incoming_world[literal_eval(key)] = incoming[key]
+        return incoming_world
+
+
     with open(RESOURCES / file_name) as file:
-        return json.load(file)
+        data = json.load(file)
+        world_data = data["world"]
+        data["world"] = evaluator(world_data)
+        return data
 
 def open_file():
     """Reads the needed files into memory"""

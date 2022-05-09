@@ -2,6 +2,7 @@ import CODE.world_creator as wc
 from CODE.world import World
 from CODE.char import Char
 from CODE.game_handler.command import Command
+import CODE.InputOutput as IO
 
 from enum import Enum
 from CODE.char.directions import Directions as Dir
@@ -35,10 +36,15 @@ class MainClass(object):
         return self.__char.getPos()
 
 
-    def walk_command(self, arguments: list):
+    def get_map(self) -> tuple:
+        return self.__world.getMap(self.char_pos())
+
+
+    def walk_command(self, arguments: list) -> str:
         argument = arguments[0]
         direction = Dir.get_direction(argument)
-        self.walk_char(direction)
+        if not self.walk_char(direction):
+            return "You cannot walk there"
 
 
     def look_command(self, arguments: list):
@@ -57,9 +63,9 @@ class MainClass(object):
 
 
     def main_loop(self):
-        #IO.print_to_screen(self.char.getPos(), self.world.getMap(self.char.getPos()))
+        IO.print_to_screen("", self.get_map())
         self.walk_char(Dir.DOWN)
-        #IO.print_to_screen(self.char.getPos(), self.world.getMap(self.char.getPos()))
+        IO.print_to_screen("", self.get_map())
 
 
     def __init__(self, world: World, char: Char):
