@@ -9,7 +9,9 @@ class World:
 
     def viableCell(self, cell: tuple) -> bool:
         """Checks if a square is viable, aka inside the map"""
-        if cell[0] > self.world_size[0] or cell[0] < 0 or cell[1] > self.world_size[1] or cell[1] < 0:
+        y_axis, x_axis = self.world_size
+        y_pos, x_pos = cell
+        if y_pos >= y_axis or y_pos < 0 or x_pos >= x_axis or x_pos < 0:
             return False
         else:
             return True
@@ -50,12 +52,12 @@ class World:
 
     def getNeighbours(self, cell_pos: tuple) -> list:
         """Used to get the neighbours of a single specified square"""
-        x_, y_ = cell_pos
+        y_, x_ = cell_pos
         returnlist = []
-        up = (x_, y_-1)
-        down = (x_, y_+1)
-        left = (x_-1, y_)
-        right = (x_+1, y_)
+        up = (y_-1, x_)
+        down = (y_+1, x_)
+        left = (y_, x_-1)
+        right = (y_, x_+1)
 
         if y_ > 0 and self.world_cells[str(up)]:
             returnlist.append({up: self.world_cells[str(up)]})
@@ -70,7 +72,7 @@ class World:
 
 
     def getMap(self, position: tuple) -> str:
-        x_axis, y_axis = self.world_size
+        y_axis, x_axis = self.world_size
         _printer = []
         _i = x_axis
         world = self.world_cells

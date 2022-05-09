@@ -1,31 +1,31 @@
 import unittest
 
 from CODE.char import Char
+from CODE.char.directions import Directions as Dir
 from CODE.world import World
 from CODE.inventory import Item
+from CODE.runner import MainClass
 import CODE.InputOutput as inout
+
+import CODE.world_creator as wc
 
 class TestWorld(unittest.TestCase):
 
-    def getWorld(self):
-        world = inout.get_file("test.json")
-        return World(world)
-
     def test_cell_viability(self):
-        world = self.getWorld()
+        world = getWorld()
         self.assertTrue(world.viableCell((0, 0)))
         self.assertFalse(world.viableCell((0, -1)))
         self.assertTrue(world.viableCell((1, 1)))
         self.assertFalse(world.viableCell((0, 4)))
 
     def test_walkable_cell(self):
-        world = self.getWorld()
+        world = getWorld()
         self.assertTrue(world.walkableCell((0, 0)))
         self.assertTrue(world.walkableCell((1, 1)))
         self.assertFalse(world.walkableCell((2, 2)))
 
     def test_read_square(self):
-        world = self.getWorld()
+        world = getWorld()
         cell = world.readSquare((0, 0))
         cell_check = {
             "description": {
@@ -49,7 +49,7 @@ class TestWorld(unittest.TestCase):
         self.assertEqual(cell, cell_check)
 
     def test_get_items(self):
-        world = self.getWorld()
+        world = getWorld()
         items = world.getItems((0, 1))
         expected_items = None
         self.assertEqual(items, expected_items)
@@ -80,7 +80,7 @@ class TestWorld(unittest.TestCase):
 
 
     def test_get_interactions(self):
-        world = self.getWorld()
+        world = getWorld()
         interactions = world.getInteractions((0, 0))
         expected_interacts = {"interact1": {"desc": "placeholder",
                                        "key": "no",
@@ -101,14 +101,14 @@ class TestWorld(unittest.TestCase):
         self.assertEqual(interactions, expected_interacts)
 
     def test_get_neighbours(self):
-        world = self.getWorld()
+        world = getWorld()
         neigh = world.getNeighbours((0, 0))
         cell_pos = []
         for each in neigh:
             for key in each.keys():
                 cell_pos.append(key)
 
-        self.assertEqual(cell_pos, [(0, 1), (1, 0)])
+        self.assertEqual(cell_pos, [(1, 0), (0, 1)])
 
         neigh = world.getNeighbours((1, 1))
         cell_pos = []
@@ -116,7 +116,7 @@ class TestWorld(unittest.TestCase):
             for key in each.keys():
                 cell_pos.append(key)
 
-        self.assertEqual(cell_pos, [(1, 0), (1, 2), (0, 1), (2, 1)])
+        self.assertEqual(cell_pos, [(0, 1), (2, 1), (1, 0), (1, 2)])
 
 
 class TestChar(unittest.TestCase):
@@ -141,19 +141,39 @@ class TestChar(unittest.TestCase):
 
     def test_walk(self):
         char = Char()
-        char.walk(1, 0)
+        char.walk(Dir.DOWN)
         self.assertEqual((1, 0), char.getPos())
-        char.walk(0, 1)
+        char.walk(Dir.RIGHT)
         self.assertEqual((1, 1), char.getPos())
-        char.walk(0, -1)
+        char.walk(Dir.LEFT)
         self.assertEqual((1, 0), char.getPos())
-        char.walk(-1, 0)
+        char.walk(Dir.UP)
         self.assertEqual((0, 0), char.getPos())
 
 
 class TestMain(unittest.TestCase):
-    pass
 
+    
+    def test_walk_char(self):
+        main = getMain()
+        self.assertEqual((1, 1), main.char.getPos())
+        main.walk_char(Dir.DOWN)
+        self.assertEqual((2, 1), main.char.getPos())
+        main.walk_char(Dir.DOWN)
+        self.assertEqual((2, 1), main.char.getPos())
+        main.walk_char(Dir.LEFT)
+        self.assertEqual((2, 0), main.char.getPos())
+
+
+def getWorld():
+    world = inout.get_file("test.json")
+    return World(world)
+
+
+def getMain() -> MainClass:
+    world = getWorld()
+    char = Char(pos=(1, 1))
+    return MainClass(world, char)
 
 if __name__ == '__main__':
     unittest.main()

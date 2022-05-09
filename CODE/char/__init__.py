@@ -30,33 +30,31 @@ class Char(object):
         return self.inventory.is_in_inventory(item)
 
 
-    def walk(self, ew: Dir, ns: Dir):
+    def walk(self, direction: Dir):
         """
         Used to walk a char
         :param ew > 0 = walk east, < 0 = walk west
         :param ns > 0 = walk north, < 0 = walk south
         """
-        if ns != 0:
-            if ns > 0:
-                self.char_y += self.step_size
-            elif ns < 0:
-                self.char_y -= self.step_size
-        if ew != 0:
-            if ew > 0:
-                self.char_x += self.step_size
-            elif ew < 0:
-                self.char_x -= self.step_size
+        if direction == Dir.UP:
+            self.char_y -= self.step_size
+        elif direction == Dir.DOWN:
+            self.char_y += self.step_size
+        elif direction == Dir.LEFT:
+            self.char_x -= self.step_size
+        elif direction == Dir.RIGHT:
+            self.char_x += self.step_size
 
 
     def setPos(self, pos: tuple):
         """Set position of char"""
-        self.char_x = pos[0]
-        self.char_y = pos[1]
+        self.char_x = pos[1]
+        self.char_y = pos[0]
 
 
     def getPos(self) -> tuple:
         """Get position of char"""
-        return (self.char_x, self.char_y)
+        return (self.char_y, self.char_x)
 
 
     def __str__(self) -> str:
