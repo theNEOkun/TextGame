@@ -4,6 +4,20 @@ from CODE.inventory import Item
 import CODE.InputOutput as b
 
 
+class worldSize:
+    world_size: list
+
+    def to_json(self):
+        return self.world_size
+
+    def __getitem__(self, index):
+        return self.world_size[index]
+
+    def __init__(self, world_size: list):
+        self.world_size = world_size
+
+
+
 """LEGEND:
 NEXT_MAP means where the next map "is"
 PLACEMENT means where you will be placed on that map
@@ -33,7 +47,7 @@ WORLDS = {"world_1":
             "KEY": "no"
         },
         "WORLDS": "x",
-        "SIZE": [9, 9]
+        "SIZE": worldSize([9, 9])
     },
 }
 
@@ -77,13 +91,24 @@ class worldCell:
             self.mapping = GROUND
             return True
 
-    def __str__(self) -> dict:
+
+    def __str__(self):
+        return json.dumps({
+            "description": self.description,
+            "items": self.items,
+            "interactions": self.interactions,
+            "mapping": self.mapping
+        }, indent=4)
+
+
+    def to_json(self):
         return {
             "description": self.description,
             "items": self.items,
             "interactions": self.interactions,
             "mapping": self.mapping
         }
+
 
     def __init__(self, coords, descr, items, interact, mapp):
         self.coords = coords
@@ -186,10 +211,17 @@ def world_size(key: str):
     return WORLDS[key]["SIZE"]
 
 
-def caretaker(world: dict, grid, axis: tuple) -> dict:
+def caretaker(world: str, grid, axis: tuple) -> dict:
     outgoing_world = {}
+    curr_world = WORLDS[world]
+    things = THINGS_IN_WORLD[world]
     for each in grid:
-        outgoing_world.update({each: check_special(each, world)})
+        if not is_tunnel(each, curr_world):
+            outgoing_world.update({each: check_special(each, things)})
+        else:
+            outgoing_world.update({each: tunnel_cell(each)})
+
+    return outgoing_world
 
 
 def is_tunnel(coord: tuple, world: dict) -> bool:
@@ -208,13 +240,15 @@ def is_road(coord: tuple, world: dict) -> bool:
     return coord in set(world["road"])
 
 
+def check_places(coord: tuple, world: dict) -> worldCell:
+    pass
+
+
 def check_special(coord: tuple, world: dict) -> worldCell:
     if is_wall(coord, world):
         return rim_border(coord)
     elif is_road(coord, world):
         return road_cell(coord)
-    elif is_tunnel(coord, world):
-        return tunnel_cell(coord)
     elif is_door(coord, world):
         return door_cell(coord)
     else:
@@ -222,16 +256,16 @@ def check_special(coord: tuple, world: dict) -> worldCell:
 
 
 def runner():
-    """Runner takes care of starting caretaker and ouputting to file"""
+    """Runner takes care of starting caretaker and outputting to file"""
     ouput_file = dict()
-    for world in WORLD_NAMES:
-        output = "{}.json".format(world)
-        with open(b.RESOURCES / output, "w") as outfile:
-            ouput_file["world_size"] = {"size": WORLDS[world]["SIZE"]}
-            axis = world_size(world)
-            grid = create_grid(axis[0], axis[1])
-            ouput_file["world"] = caretaker(world, grid, axis)
-            json.dump({x: {str(k): v for k, v in val.items()} for x, val in ouput_file.items()}, outfile, indent=4)
+    world = WORLD_NAMES
+    output = "{}.json".format(world)
+    with open(b.RESOURCES / output, "w") as outfile:
+        ouput_file["world_size"] = {"size": WORLDS[world]["SIZE"]}
+        axis = world_size(world)
+        grid = create_grid(axis[0], axis[1])
+        ouput_file["world"] = caretaker(world, grid, axis)
+        json.dump({str(world_info): {str(key): val.to_json() for key, val in world_data.items()} for world_info, world_data in ouput_file.items()}, outfile, indent=4)
 
 
 if __name__ == '__main__':

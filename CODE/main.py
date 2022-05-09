@@ -1,4 +1,4 @@
-import world_creator as wc
+import CODE.world_creator as wc
 
 
 def main():

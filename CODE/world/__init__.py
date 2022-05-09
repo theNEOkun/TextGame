@@ -1,4 +1,9 @@
+from CODE.world_creator import worldCell
+
 class World:
+    world_size: int
+    world_cells: worldCell
+
     def readSquare():
         pass
 
