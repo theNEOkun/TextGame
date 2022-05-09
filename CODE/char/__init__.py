@@ -1,5 +1,5 @@
-from inventory import Inventory
-from inventory import Item
+from CODE.inventory import Inventory
+from CODE.inventory import Item
 
 
 class Char(object):

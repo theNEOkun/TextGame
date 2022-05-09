@@ -62,15 +62,14 @@ THINGS_IN_WORLD = {"world_1": {"building": [(3, 3),
                                         (2, 4),
                                         (4, 6),
                                         (4, 7)],
-                               "door": [(4, 5)]}
+                               "door": [(4, 5)],
+                               "spawn": [SPAWN]}
                    }
 
 # This is used to iterate over when setting each map
 WORLD_NAMES = ("world_1")
 
 RIM, GROUND, PLAYER, ROAD, BUILDING, DOORS, TUNNEL = 'M', ' ', 'P', 'R', 'B', 'D', 'T'
-
-CARDINALS = ["north", "south", "west", "east"]
 
 
 class worldCell:
@@ -192,6 +191,15 @@ def central(coords: tuple) -> worldCell:
     return worldCell(coords, description, items, interactions, GROUND)
 
 
+def spawn_cell(coords: tuple) -> worldCell:
+    description = {"description":
+                       {"place": "you are standing in a dark cave",
+                           "look": "It is a cave"
+                        }
+                   }
+    return worldCell(coords, description, None, None, ROAD)
+
+
 def rim_or_cell(each: tuple, axis: tuple):
     """Used to differentiate between the borders of the screen, and the ground"""
     y_axis, x_axis = axis
@@ -240,12 +248,14 @@ def is_road(coord: tuple, world: dict) -> bool:
     return coord in set(world["road"])
 
 
-def check_places(coord: tuple, world: dict) -> worldCell:
-    pass
+def is_spawn(coord: tuple, world: dict) -> bool:
+    return coord in set(world["spawn"])
 
 
 def check_special(coord: tuple, world: dict) -> worldCell:
-    if is_wall(coord, world):
+    if is_spawn(coord, world):
+        return spawn_cell(coord)
+    elif is_wall(coord, world):
         return rim_border(coord)
     elif is_road(coord, world):
         return road_cell(coord)

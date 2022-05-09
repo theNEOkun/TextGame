@@ -1,16 +1,26 @@
 import unittest
 
-from char import Char
-from world import World
-from inventory import Item
+from CODE.char import Char
+from CODE.world import World
+from CODE.inventory import Item
+import CODE.InputOutput as inout
 
 class TestWorld(unittest.TestCase):
+
+    def getWorld(self):
+        world = inout.get_file("test.json")
+        return World(world["world_size"], world["world"])
 
     def test_read_square(self):
         pass
 
     def test_get_neighbours(self):
-        pass
+        world = self.getWorld()
+        neigh = world.getNeighbours((0, 0))
+        for each in neigh:
+            cell_pos += each.key()
+        self.assertEqual(cell_pos, ["(0, 1)", "1, 0"])
+
 
 class TestChar(unittest.TestCase):
 
@@ -42,7 +52,6 @@ class TestChar(unittest.TestCase):
         self.assertEqual((1, 0), char.getPos())
         char.walk(-1, 0)
         self.assertEqual((0, 0), char.getPos())
-
 
 
 if __name__ == '__main__':

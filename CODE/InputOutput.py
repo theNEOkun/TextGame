@@ -58,6 +58,10 @@ def get_print_value(_val: str) -> str:
     return "{}{}{}".format(get_state_color(_val), _val, get_state_color('ENDC'))
 
 
+def get_file(file_name: str):
+    with open(RESOURCES / file_name) as file:
+        return json.load(file)
+
 def open_file():
     """Reads the needed files into memory"""
 
