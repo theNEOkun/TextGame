@@ -5,11 +5,34 @@ class World:
     world_size: list
     world_cells: dict
 
-    def readSquare(self, cell_pos: tuple) -> dict:
-        if cell_pos[0] > self.world_size[0] and cell_pos[1] > self.world_size[1]:
-            return
+    def viableCell(self, cell: tuple) -> bool:
+        if cell[0] > self.world_size[0] or cell[0] < 0 or cell[1] > self.world_size[1] or cell[1] < 0:
+            return False
+        else:
+            return True
 
-        return {cell_pos: self.world_cells[str(cell_pos)]}
+    def readSquare(self, cell_pos: tuple) -> dict:
+        if not self.viableCell(cell_pos):
+            return None
+
+        return self.world_cells[str(cell_pos)]
+
+
+    def getItems(self, cell_pos: tuple) -> dict:
+        if not self.viableCell(cell_pos):
+            return None
+
+        cell = self.readSquare(cell_pos)
+        return cell["items"]
+
+
+    def getInteractions(self, cell_pos: tuple) -> dict:
+        if not self.viableCell(cell_pos):
+            return None
+
+        cell = self.readSquare(cell_pos)
+        return cell["interactions"]
+
 
     def getNeighbours(self, cell_pos: tuple) -> list:
         x_, y_ = cell_pos

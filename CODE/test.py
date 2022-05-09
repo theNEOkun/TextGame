@@ -11,19 +11,88 @@ class TestWorld(unittest.TestCase):
         world = inout.get_file("test.json")
         return World(world["world_size"], world["world"])
 
+    def test_cell_viability(self):
+        world = self.getWorld()
+        self.assertTrue(world.viableCell((0, 0)))
+        self.assertFalse(world.viableCell((0, -1)))
+        self.assertTrue(world.viableCell((1, 1)))
+        self.assertFalse(world.viableCell((0, 4)))
+
     def test_read_square(self):
         world = self.getWorld()
         cell = world.readSquare((0, 0))
-        cell_check = {(0, 0): {
+        cell_check = {
             "description": {
                 "place": "It is grassland",
                 "look": "You see grassland"
             },
-            "items": None,
-            "interactions": None,
+            "items": {"item1": {"desc": "placeholder",
+                            "name": "placeholder",
+                            "pickup": "no",
+                            "hidden_info": "placeholder",
+                            "action": "placeholder"
+                            }
+			},
+            "interactions": {"interact1": {"desc": "placeholder",
+                                       "key": "no",
+                                       "action": "placeholder",
+                                       "happening": "placeholder"}
+			},
             "mapping": " "
-        }}
+        }
         self.assertEqual(cell, cell_check)
+
+    def test_get_items(self):
+        world = self.getWorld()
+        items = world.getItems((0, 1))
+        expected_items = None
+        self.assertEqual(items, expected_items)
+        items = world.getItems((0, 0))
+        expected_items = {"item1": {"desc": "placeholder",
+                            "name": "placeholder",
+                            "pickup": "no",
+                            "hidden_info": "placeholder",
+                            "action": "placeholder"
+                            }}
+        self.assertEqual(items, expected_items)
+        items = world.getItems((1, 0))
+        expected_items = {"item1": {"desc": "placeholder",
+                            "name": "placeholder",
+                            "pickup": "no",
+                            "hidden_info": "placeholder",
+                            "action": "placeholder"
+                            },
+					"item2": {"desc": "placeholder",
+                            "name": "placeholder",
+                            "pickup": "no",
+                            "hidden_info": "placeholder",
+                            "action": "placeholder"
+                            }
+
+			}
+        self.assertEqual(items, expected_items)
+
+
+    def test_get_interactions(self):
+        world = self.getWorld()
+        interactions = world.getInteractions((0, 0))
+        expected_interacts = {"interact1": {"desc": "placeholder",
+                                       "key": "no",
+                                       "action": "placeholder",
+                                       "happening": "placeholder"}
+			}
+        self.assertEqual(interactions, expected_interacts)
+        interactions = world.getInteractions((0, 1))
+        expected_interacts = {"interact1": {"desc": "placeholder",
+                                       "key": "no",
+                                       "action": "placeholder",
+                                       "happening": "placeholder"},
+							"interact2": {"desc": "placeholder",
+                                       "key": "no",
+                                       "action": "placeholder",
+                                       "happening": "placeholder"}
+			}
+        self.assertEqual(interactions, expected_interacts)
 
     def test_get_neighbours(self):
         world = self.getWorld()
