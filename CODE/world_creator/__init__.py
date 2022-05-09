@@ -116,10 +116,16 @@ class worldCell:
         self.mapping = mapp
 
 
-def rim_border(coords: tuple, is_door=None) -> worldCell:
+def rim_cell(coords: tuple, is_door=None) -> worldCell:
+    """This creates the borders, and adds the things that are needed in it"""
+    description = {"place": "How did you get here?", "look": "You see mountains"}
+    return worldCell(coords, description, None, None, maps.RIM)
+
+
+def wall_cell(coords: tuple, is_door=None) -> worldCell:
     """This creates the borders, and adds the things that are needed in it"""
     description = {"place": "How did you get here?", "look": "It's a wall"}
-    return worldCell(coords, description, None, None, maps.RIM)
+    return worldCell(coords, description, None, None, maps.BUILDING)
 
 
 def world_cell(coords: tuple) -> worldCell:
@@ -202,9 +208,9 @@ def rim_or_cell(each: tuple, axis: tuple):
     y_axis, x_axis = axis
     x_, y_ = each
     if x_ == 0 or y_ == 0 or x_ + 1 == y_axis or y_ + 1 == x_axis:  # If it is in any edge point
-        return rim_border(each)
+        True
     else:
-        return central(each)
+        False
 
 
 def create_grid(x_axis: int, y_axis: int):
@@ -216,15 +222,15 @@ def world_size(key: str):
     return WORLDS[key]["SIZE"]
 
 
-def caretaker(world: str, grid, axis: tuple) -> dict:
+def caretaker(world: str, grid: list, axis: tuple) -> dict:
     outgoing_world = {}
     curr_world = WORLDS[world]
     things = THINGS_IN_WORLD[world]
     for each in grid:
-        if not is_tunnel(each, curr_world):
+        if not rim_or_cell(each, axis):
             outgoing_world.update({each: check_special(each, things)})
         else:
-            outgoing_world.update({each: tunnel_cell(each)})
+            outgoing_world.update({each: check_world_parts(each)})
 
     return outgoing_world
 
@@ -249,11 +255,18 @@ def is_spawn(coord: tuple, world: dict) -> bool:
     return coord in set(world["spawn"])
 
 
+def check_world_parts(coord: tuple, world: dict, grid: list) -> worldCell:
+    if is_tunnel(coord, world):
+        return tunnel_cell(coord)
+    else:
+        return rim_cell(coord, grid)
+
+
 def check_special(coord: tuple, world: dict) -> worldCell:
     if is_spawn(coord, world):
         return spawn_cell(coord)
     elif is_wall(coord, world):
-        return rim_border(coord)
+        return wall_cell(coord)
     elif is_road(coord, world):
         return road_cell(coord)
     elif is_door(coord, world):

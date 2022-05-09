@@ -89,7 +89,7 @@ class World:
         _i = x_axis
         world = self.__world_cells
         for _cell, value in world.items():
-            if world[_cell]["mapping"] != wc.RIM:
+            if value["mapping"] != wc.RIM:
                 if _cell != position:
                     _printer.append(b.get_print_value(value["mapping"]))
                 else:
