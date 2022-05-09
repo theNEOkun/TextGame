@@ -17,9 +17,20 @@ class TestWorld(unittest.TestCase):
     def test_get_neighbours(self):
         world = self.getWorld()
         neigh = world.getNeighbours((0, 0))
+        cell_pos = []
         for each in neigh:
-            cell_pos += each.key()
-        self.assertEqual(cell_pos, ["(0, 1)", "1, 0"])
+            for key in each.keys():
+                cell_pos.append(key)
+
+        self.assertEqual(cell_pos, [(0, 1), (1, 0)])
+
+        neigh = world.getNeighbours((1, 1))
+        cell_pos = []
+        for each in neigh:
+            for key in each.keys():
+                cell_pos.append(key)
+
+        self.assertEqual(cell_pos, [(1, 0), (1, 2), (0, 1), (2, 1)])
 
 
 class TestChar(unittest.TestCase):
