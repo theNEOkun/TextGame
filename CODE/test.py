@@ -4,7 +4,8 @@ from CODE.char import Char
 from CODE.char.directions import Directions as Dir
 from CODE.world import World
 from CODE.inventory import Item
-from CODE.runner import MainClass
+from CODE.game_handler import MainClass
+from CODE.game_handler.command import Command
 import CODE.InputOutput as inout
 
 import CODE.world_creator as wc
@@ -152,17 +153,51 @@ class TestChar(unittest.TestCase):
 
 
 class TestMain(unittest.TestCase):
-
     
     def test_walk_char(self):
         main = getMain()
-        self.assertEqual((1, 1), main.char.getPos())
-        main.walk_char(Dir.DOWN)
-        self.assertEqual((2, 1), main.char.getPos())
-        main.walk_char(Dir.DOWN)
-        self.assertEqual((2, 1), main.char.getPos())
-        main.walk_char(Dir.LEFT)
-        self.assertEqual((2, 0), main.char.getPos())
+        self.assertEqual((1, 1), main.char_pos())
+        self.assertTrue(main.walk_char(Dir.DOWN))
+        self.assertEqual((2, 1), main.char_pos())
+        self.assertFalse(main.walk_char(Dir.DOWN))
+        self.assertEqual((2, 1), main.char_pos())
+        self.assertTrue(main.walk_char(Dir.LEFT))
+        self.assertEqual((2, 0), main.char_pos())
+
+
+    def test_walk_command(self):
+        main = getMain()
+        self.assertEqual((1, 1), main.char_pos())
+        arguments = ["s"]
+        main.walk_command(arguments)
+        self.assertEqual((2, 1), main.char_pos())
+        arguments = ["n"]
+        main.walk_command(arguments)
+        self.assertEqual((1, 1), main.char_pos())
+
+
+    def test_options(self):
+        main = getMain()
+        command = "walk s"
+        arg, rest = main.checkCommand(command)
+        self.assertEqual(arg, Command.WALK)
+        self.assertEqual(rest, ["s"])
+        command = "walk n"
+        arg, rest = main.checkCommand(command)
+        self.assertEqual(arg, Command.WALK)
+        self.assertEqual(rest, ["n"])
+        command = "look around"
+        arg, rest = main.checkCommand(command)
+        self.assertEqual(arg, Command.LOOK)
+        self.assertEqual(rest, ["around"])
+        command = "jump"
+        arg, rest = main.checkCommand(command)
+        self.assertEqual(arg, None)
+        self.assertEqual(rest, None)
+
+
+    def test_command_flow(self):
+        pass
 
 
 def getWorld():

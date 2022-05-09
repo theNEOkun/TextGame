@@ -4,12 +4,12 @@ import CODE.world_creator.mappings as wc
 import CODE.InputOutput as b
 
 class World:
-    world_size: list
-    world_cells: dict
+    __world_size: list
+    __world_cells: dict
 
     def viableCell(self, cell: tuple) -> bool:
         """Checks if a square is viable, aka inside the map"""
-        y_axis, x_axis = self.world_size
+        y_axis, x_axis = self.__world_size
         y_pos, x_pos = cell
         if y_pos >= y_axis or y_pos < 0 or x_pos >= x_axis or x_pos < 0:
             return False
@@ -29,7 +29,7 @@ class World:
         if not self.viableCell(cell_pos):
             return {}
 
-        return self.world_cells[str(cell_pos)]
+        return self.__world_cells[str(cell_pos)]
 
 
     def getItems(self, cell_pos: tuple) -> dict:
@@ -59,23 +59,23 @@ class World:
         left = (y_, x_-1)
         right = (y_, x_+1)
 
-        if y_ > 0 and self.world_cells[str(up)]:
-            returnlist.append({up: self.world_cells[str(up)]})
-        if y_ < self.world_size[1] and self.world_cells[str(down)]:
-            returnlist.append({down: self.world_cells[str(down)]})
-        if x_ > 0 and self.world_cells[str(left)]:
-            returnlist.append({left: self.world_cells[str(left)]})
-        if x_ < self.world_size[0] and self.world_cells[str(right)]:
-            returnlist.append({right: self.world_cells[str(right)]})
+        if y_ > 0 and self.__world_cells[str(up)]:
+            returnlist.append({up: self.__world_cells[str(up)]})
+        if y_ < self.__world_size[1] and self.__world_cells[str(down)]:
+            returnlist.append({down: self.__world_cells[str(down)]})
+        if x_ > 0 and self.__world_cells[str(left)]:
+            returnlist.append({left: self.__world_cells[str(left)]})
+        if x_ < self.__world_size[0] and self.__world_cells[str(right)]:
+            returnlist.append({right: self.__world_cells[str(right)]})
 
         return returnlist
 
 
     def getMap(self, position: tuple) -> str:
-        y_axis, x_axis = self.world_size
+        y_axis, x_axis = self.__world_size
         _printer = []
         _i = x_axis
-        world = self.world_cells
+        world = self.__world_cells
         position = str(position)
         for _cell, value in world.items():
             if world[_cell]["mapping"] != wc.RIM:
@@ -95,14 +95,14 @@ class World:
 
     def __str__(self):
         return json.dumps({
-            "size": self.world_size,
-            "world": self.world_cells
+            "size": self.__world_size,
+            "world": self.__world_cells
             }, indent=4)
 
 
     def __init__(self, world: dict):
-        self.world_size = world["world_size"]["size"]
-        self.world_cells = world["world"]
+        self.__world_size = world["world_size"]["size"]
+        self.__world_cells = world["world"]
 
 
 if __name__ == '__main__':

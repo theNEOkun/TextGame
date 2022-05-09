@@ -1,4 +1,4 @@
-from CODE.runner import MainClass
+from CODE.game_handler import MainClass
 from CODE.world import World
 from CODE.char import Char
 
