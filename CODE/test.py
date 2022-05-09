@@ -12,7 +12,18 @@ class TestWorld(unittest.TestCase):
         return World(world["world_size"], world["world"])
 
     def test_read_square(self):
-        pass
+        world = self.getWorld()
+        cell = world.readSquare((0, 0))
+        cell_check = {(0, 0): {
+            "description": {
+                "place": "It is grassland",
+                "look": "You see grassland"
+            },
+            "items": None,
+            "interactions": None,
+            "mapping": " "
+        }}
+        self.assertEqual(cell, cell_check)
 
     def test_get_neighbours(self):
         world = self.getWorld()

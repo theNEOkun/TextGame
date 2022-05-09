@@ -5,9 +5,11 @@ class World:
     world_size: list
     world_cells: dict
 
-    def readSquare(self):
-        pass
+    def readSquare(self, cell_pos: tuple) -> dict:
+        if cell_pos[0] > self.world_size[0] and cell_pos[1] > self.world_size[1]:
+            return
 
+        return {cell_pos: self.world_cells[str(cell_pos)]}
 
     def getNeighbours(self, cell_pos: tuple) -> list:
         x_, y_ = cell_pos
