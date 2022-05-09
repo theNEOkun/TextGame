@@ -9,7 +9,7 @@ class TestWorld(unittest.TestCase):
 
     def getWorld(self):
         world = inout.get_file("test.json")
-        return World(world["world_size"], world["world"])
+        return World(world)
 
     def test_cell_viability(self):
         world = self.getWorld()
@@ -143,6 +143,10 @@ class TestChar(unittest.TestCase):
         self.assertEqual((1, 0), char.getPos())
         char.walk(-1, 0)
         self.assertEqual((0, 0), char.getPos())
+
+
+class TestMain(unittest.TestCase):
+    pass
 
 
 if __name__ == '__main__':

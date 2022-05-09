@@ -2,6 +2,7 @@ import json
 import itertools
 from CODE.inventory import Item
 import CODE.InputOutput as b
+import CODE.world_creator.mappings as maps
 
 
 class worldSize:
@@ -69,8 +70,6 @@ THINGS_IN_WORLD = {"world_1": {"building": [(3, 3),
 # This is used to iterate over when setting each map
 WORLD_NAMES = ("world_1")
 
-RIM, GROUND, PLAYER, ROAD, BUILDING, DOORS, TUNNEL = 'M', ' ', 'P', 'R', 'B', 'D', 'T'
-
 
 class worldCell:
     coords: tuple
@@ -80,14 +79,14 @@ class worldCell:
     mapping: str
     walkable: bool
 
-    NON_WALKABLES = BUILDING, RIM, DOORS
+    NON_WALKABLES = maps.BUILDING, maps.RIM, maps.DOORS
 
     def open(self, item: Item) -> bool:
         """Used to open if it is a door"""
-        if self.mapping != DOORS:
+        if self.mapping != maps.DOORS:
             return False
         if item.name == self.interactions["open_door"]["key"]:
-            self.mapping = GROUND
+            self.mapping = maps.GROUND
             return True
 
 
@@ -122,29 +121,29 @@ class worldCell:
 def rim_border(coords: tuple, is_door=None) -> worldCell:
     """This creates the borders, and adds the things that are needed in it"""
     description = {"place": "How did you get here?", "look": "It's a wall"}
-    return worldCell(coords, description, None, None, RIM)
+    return worldCell(coords, description, None, None, maps.RIM)
 
 
 def world_cell(coords: tuple) -> worldCell:
     description = {"place": "It is grassland", "look": "You see grassland"}
-    return worldCell(coords, description, None, None, GROUND)
+    return worldCell(coords, description, None, None, maps.GROUND)
 
 
 def door_cell(coords: tuple) -> worldCell:
     description = {"description": {"place": "It is a door", "look": "You see a door"}}
     interactions = {
         "interactions": {"open_door": {"desc": "open", "key": "key", "action": "open", "happening": "door opened"}}}
-    return worldCell(coords, description, None, interactions, DOORS)
+    return worldCell(coords, description, None, interactions, maps.DOORS)
 
 
 def road_cell(coords: tuple) -> worldCell:
     description = {"description": {"place": "It is a dirt path", "look": "you see a dirt path"}}
-    return worldCell(coords, description, None, None, ROAD)
+    return worldCell(coords, description, None, None, maps.ROAD)
 
 
 def tunnel_cell(coords: tuple) -> worldCell:
     description = {"description": {"place": "You are in a dark cave", "look": "You see a cave"}}
-    return worldCell(coords, description, None, None, TUNNEL)
+    return worldCell(coords, description, None, None, maps.TUNNEL)
 
 
 def central(coords: tuple) -> worldCell:
@@ -188,7 +187,7 @@ def central(coords: tuple) -> worldCell:
                                        "happening": "placeholder"},
                          }
                     }
-    return worldCell(coords, description, items, interactions, GROUND)
+    return worldCell(coords, description, items, interactions, maps.GROUND)
 
 
 def spawn_cell(coords: tuple) -> worldCell:
@@ -197,7 +196,7 @@ def spawn_cell(coords: tuple) -> worldCell:
                            "look": "It is a cave"
                         }
                    }
-    return worldCell(coords, description, None, None, ROAD)
+    return worldCell(coords, description, None, None, maps.ROAD)
 
 
 def rim_or_cell(each: tuple, axis: tuple):

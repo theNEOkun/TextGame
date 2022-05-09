@@ -2,7 +2,7 @@ import os
 import sys
 import shutil
 import logging
-import CODE.world_creator as wc
+import CODE.world_creator.mappings as wc
 from CODE.inventory import Item
 from pathlib import Path
 from ast import literal_eval
