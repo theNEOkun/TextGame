@@ -1,6 +1,7 @@
 from CODE.inventory import Inventory
 from CODE.inventory import Item
 
+from CODE.char.directions import Directions as Dir
 
 class Char(object):
 
@@ -29,7 +30,7 @@ class Char(object):
         return self.inventory.is_in_inventory(item)
 
 
-    def walk(self, ew: int = 1, ns: int = 1):
+    def walk(self, ew: Dir, ns: Dir):
         """
         Used to walk a char
         :param ew > 0 = walk east, < 0 = walk west

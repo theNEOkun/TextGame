@@ -18,6 +18,12 @@ class TestWorld(unittest.TestCase):
         self.assertTrue(world.viableCell((1, 1)))
         self.assertFalse(world.viableCell((0, 4)))
 
+    def test_walkable_cell(self):
+        world = self.getWorld()
+        self.assertTrue(world.walkableCell((0, 0)))
+        self.assertTrue(world.walkableCell((1, 1)))
+        self.assertFalse(world.walkableCell((2, 2)))
+
     def test_read_square(self):
         world = self.getWorld()
         cell = world.readSquare((0, 0))

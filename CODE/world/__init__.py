@@ -14,6 +14,14 @@ class World:
         else:
             return True
 
+    def walkableCell(self, cell: tuple) -> bool:
+        if not self.viableCell(cell):
+            return False
+        mapping = self.readSquare(cell)["mapping"]
+        if mapping in wc.NON_WALKABLES:
+            return False
+        return True
+
     def readSquare(self, cell_pos: tuple) -> dict:
         """Used to get a single specified square on the map"""
         if not self.viableCell(cell_pos):
@@ -61,15 +69,16 @@ class World:
         return returnlist
 
 
-    def getMap(self, position: str) -> str:
+    def getMap(self, position: tuple) -> str:
         x_axis, y_axis = self.world_size
         _printer = []
         _i = x_axis
         world = self.world_cells
-        for _cell in world:
+        position = str(position)
+        for _cell, value in world.items():
             if world[_cell]["mapping"] != wc.RIM:
-                if world[_cell] != world[position]:
-                    _printer.append(b.get_print_value(world[_cell]["mapping"]))
+                if _cell != position:
+                    _printer.append(b.get_print_value(value["mapping"]))
                 else:
                     _printer.append(b.get_print_value(wc.PLAYER))
             else:

@@ -35,7 +35,7 @@ def print_to_screen(this_output=str(), _map=str()):
     clear_console()
     sys.stdout.write("{}\n".format(_map))
 
-    sys.stdout.write("{}\n".format(this_output))
+    sys.stdout.write("\033[0m{}\n".format(this_output))
 
 
 def get_print_value(_val: str) -> str:

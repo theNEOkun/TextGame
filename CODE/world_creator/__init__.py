@@ -79,8 +79,6 @@ class worldCell:
     mapping: str
     walkable: bool
 
-    NON_WALKABLES = maps.BUILDING, maps.RIM, maps.DOORS
-
     def open(self, item: Item) -> bool:
         """Used to open if it is a door"""
         if self.mapping != maps.DOORS:
@@ -113,7 +111,7 @@ class worldCell:
         self.description = descr
         self.items = items
         self.interactions = interact
-        if mapp in self.NON_WALKABLES:
+        if mapp in maps.NON_WALKABLES:
             self.walkable = False
         self.mapping = mapp
 
